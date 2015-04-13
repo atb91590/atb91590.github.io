@@ -5,7 +5,7 @@
 
 #headPad {
 	height: 50px; 
-	background-color: black;
+	background-color: white;
 }
 
 .nav li a {
@@ -65,8 +65,8 @@
 }
 
 .lang {
-	width: 225px;
-	padding: 10px 25px;
+	width: 185px;
+	padding: 10px 5px;
 	margin: 3px 3px;
 	float: left;
 }
