@@ -65,7 +65,7 @@
 }
 
 .lang {
-	width: 185px;
+	width: 215px;
 	padding: 10px 5px;
 	margin: 3px 3px;
 	float: left;
@@ -92,7 +92,7 @@
 .job {
 	float: left;
 	width: 250px;
-	margin-right: 25px;
+	margin-right: 10px;
 }
 
 .job div {
