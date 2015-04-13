@@ -1,7 +1,113 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html ng-app="mainModule">
+	<head>
+		<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="lib/js/jquery.min.js"></script>
+		<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/js/angular.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body ng-controller="MainController as main">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menubar">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">ATB</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="menubar">
+		      <ul class="nav navbar-nav navbar-right" ng-click="main.closeDropDown();">
+		        <li><a ng-click="main.gotoElement('myProfile');">Profile</a></li>
+		        <li><a ng-click="main.gotoElement('mySkills');">Skills</a></li>
+		        <li><a ng-click="main.gotoElement('myWork');">Work</a></li>
+		        <li><a ng-click="main.gotoElement('myProjects');">Projects</a></li>
+		        <li><a ng-click="main.gotoElement('myEducation');">Education</a></li>
+		        <li><a ng-click="main.gotoElement('myAwards');">Awards</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		<div id="headPad"></div>
+		<div id="mainContent">
+			<div id="myProfile" ng-controller="ProfileController as profile">
+				<div id="profPic"></div>
+				<a id="name">{{profile.getFullName()}}</a><br>
+				<p id="age">{{profile.getAge()}}</p>
+				<span class="glyphicon glyphicon-home" aria-hidden="true"></span> {{profile.getHomeTown();}} <br>
+				<span class="glyphicon glyphicon-education" aria-hidden="true"></span> {{profile.getDegree()}}<br>
+				<span class="glyphicon glyphicon-phone" aria-hidden="true"></span> {{profile.getPhoneNumber()}}<br>
+				<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> <a href="mailto:{{profile.getEmail()}}">{{profile.getEmail()}}</a><br>
+				<div id="objective">
+					<span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+					<span class="boldIt">Objective:</span> 
+					{{profile.getObjective()}}
+				</div>
+			</div><br><br><br><br><br><br><br><br>
+			<div class="horLine"></div>
+			<div id="mySkills" ng-controller="SkillController as skill" anchorSmoothScroll>
+				<div class="sectionTitle">Skills</div>
+				<ul id="statements">
+					<li ng-repeat="statement in skill.getStatements();">
+						{{statement}}
+					</li>
+				</ul>
+				<div class="subTitle">Familiar Libraries</div>
+				<ul id="libraries">
+					<li ng-repeat="library in skill.getLibraries();">
+						{{library}}
+					</li>
+				</ul>
+				<div class="subTitle">Framework Experience</div>
+				<ul id="frameworks">
+					<li ng-repeat="framework in skill.getFrameworks();">
+						{{framework}}
+					</li>
+				</ul>
+				<div class="subTitle">Languages</div>
+				<div id="languages">
+					<span class="label label-primary lang" ng-class="{'label-danger': main.isNumeric(lang.rating)&&lang.rating<=5, 'label-warning': main.isNumeric(lang.rating)&&lang.rating<=7, 'label-success': main.isNumeric(lang.rating)&&lang.rating<=10}" ng-repeat="lang in skill.getLanguages();">
+						<div class="langName">{{lang.name}}</div>
+						<div class="langRate">{{lang.rating}}<span ng-if="main.isNumeric(lang.rating);">/10</span</div>
+					</span>
+				</div>
+			</div><br><br><br><br><br><br><br><br>
+			<div class="horLine"></div>
+			<div id="myWork" ng-controller="WorkController as work">
+				<div class="sectionTitle">Work History</div>
+				<div id="jobContainer">
+					<div class="job panel panel-default" ng-repeat="job in work.getJobs();">
+						<div class="panel-heading">
+						    <h3 class="panel-title jobTitle">{{job.title}}</h3>
+						  </div>
+						<div class="jobLogoContainer">
+							<img class="jobLogo" ng-src="{{job.logo}}"/>
+						</div>
+						<div class="jobDuties">
+							{{job.employer}}<br>
+							{{job.city}}, {{job.state}}<br>
+							{{job.startDate}} - {{job.endDate}}<br><br>
+							<b>Responsibilities:</b><br>
+							<span ng-repeat="duty in job.duties">
+								- {{duty}}<br>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="myProjects" ng-controller="ProjectController as project">
+			</div>
+			<div id="myEducation" ng-controller="EducationController as education">
+			</div>
+			<div id="myAwards" ng-controller="AwardController as award">
+			</div>
+		</div>
+	</body>
 </html>

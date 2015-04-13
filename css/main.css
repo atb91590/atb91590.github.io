@@ -1,0 +1,167 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+#headPad {
+	height: 50px; 
+	background-color: black;
+}
+
+.nav li a {
+	cursor: pointer;
+}
+
+#mainContent {
+	cursor: default;
+}
+
+#profPic {
+	width: 300px;
+	height: 250px;
+	margin: 0px auto;
+	background-color: blue;
+}
+
+#myProfile {
+	padding-top: 125px;
+	text-align: center;
+	height: 600px;
+}
+
+#objective {
+	margin: 0 auto;
+	padding: 125px 0px;
+	width: 80%;
+}
+
+#name {
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#age {
+	font-size: 18px;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+
+#mySkills ul {
+	margin-left: 10%;
+	padding: 25px;
+	list-style: none;
+}
+
+#statements {
+	list-style: circle;
+}
+
+#languages {
+	width: 80%;
+	margin: 0px auto;
+	height: 300px;
+}
+
+.lang {
+	width: 225px;
+	padding: 10px 25px;
+	margin: 3px 3px;
+	float: left;
+}
+
+.lang div {
+	float: left;
+	text-align: center;
+}
+
+.langName {
+	width: 100px;
+}
+
+.langRate {
+	width: 75px;
+}
+
+#jobContainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.job {
+	float: left;
+	width: 250px;
+	margin-right: 25px;
+}
+
+.job div {
+	margin: 0 auto;
+}
+
+.jobLogoContainer {
+	width: 200px;
+	height: 175px;
+}
+
+.jobLogo {
+	width: 100%;
+	height: auto;
+}
+
+.jobDescription {
+	text-align: center;
+	width: 175px;
+}
+
+.jobDuties {
+	margin-top: -25px;
+	text-align: center;
+	min-width: 250px;
+	max-width: 500px;
+	width: 80%;
+}
+
+.jobTitle {
+	text-align: center;
+	font-weight: bold;
+}
+
+.sectionTitle {
+	text-align: center;
+	font-size: 24px;
+	padding: 25px 25px;
+	padding-top: 50px;
+	font-weight: bold;
+}
+
+.subTitle {
+	margin-left: 10%;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.miniHorLine {
+	margin: 0px auto;
+	width: 200px;
+	background: black;
+	height: 1px;
+}
+
+.smallHorLine {
+	margin: 0px auto;
+	width: 250px;
+	background: black;
+	height: 1px;
+}
+
+.horLine {
+	margin: 0px auto;
+	width: 80%;
+	background: black;
+	height: 1px;
+}
+
+.boldIt {
+	font-weight: bold;
+}
