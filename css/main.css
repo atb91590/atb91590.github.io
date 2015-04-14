@@ -3,35 +3,104 @@
 	padding: 0px;
 }
 
+#alert {
+	border-radius: 5px;
+	width: 99%;
+	margin: 0 auto;
+	margin-top: 0.5%;
+	text-align: center;
+	padding: 5px 0px;
+	padding-left: 5px;
+}
+
+#alert .close {
+	margin-right: 5px;
+}
+
 #headPad {
 	height: 50px; 
-	background-color: white;
+	background-color: black;
+}
+
+.navbar {
+    box-shadow: 0 4px 10px -2px #232323;
+    -moz-box-shadow: 0 4px 10px -2px #232323;
+    -webkit-box-shadow: 0 4px 10px -2px #232323;
 }
 
 .nav li a {
 	cursor: pointer;
 }
 
+.navbar-inverse {
+
+}
+
+.navbar-inverse .navbar-brand {
+  color: #5A83A0;
+}
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-inverse .navbar-text {
+  color: #5A83A0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #5A83A0;
+  font-weight: bold;
+}
+
 #mainContent {
 	cursor: default;
 }
 
-#profPic {
-	width: 300px;
+#profPicArea {
+	width: 270px;
+	height: 270px;
+	margin: 0px auto;
+} 
+
+#profPicInnerArea {
+	width: 250px;
 	height: 250px;
+	position: absolute;
+	margin: 10px;
+}
+
+#profPic2 {
+	width: 270px;
+	height: 270px;
+	margin: 0px auto;
+	background-color: green;
+	border-radius: 500px;
+	border: 10px outset #5A83A0;
+}
+
+#profPic {
+	width: 250px;
+	height: 250px;
+	position: absolute;
 	margin: 0px auto;
 	background-color: blue;
+	border-radius: 500px;
+	z-index: 1;
+    box-shadow: 0 0px 25px 0px #232323;
+    -moz-box-shadow: 0 0px 25px 0px #232323;
+    -webkit-box-shadow: 0 0px 25px 0px #232323;
 }
 
 #myProfile {
 	padding-top: 125px;
 	text-align: center;
-	height: 600px;
 }
 
 #objective {
 	margin: 0 auto;
-	padding: 125px 0px;
+	padding-top: 125px;
+	min-width: 300px;
 	width: 80%;
 }
 
@@ -49,24 +118,29 @@
 }
 
 #mySkills ul {
-	margin-left: 10%;
 	padding: 25px;
 	list-style: none;
 }
 
 #statements {
+	width: 300px;
+	margin: 0 auto;
+}
+
+#statements ul {
 	list-style: circle;
 }
 
 #languages {
 	width: 80%;
 	margin: 0px auto;
-	height: 300px;
+	padding-left: 5px;
+	margin-top: 25px;
 }
 
 .lang {
-	width: 215px;
-	padding: 10px 5px;
+	width: 235px;
+	padding: 10px 25px;
 	margin: 3px 3px;
 	float: left;
 }
@@ -84,6 +158,15 @@
 	width: 75px;
 }
 
+#libraries, #frameworks {
+	width: 300px;
+	margin: 0 auto;
+}
+
+#libraries li, #frameworks li {
+	text-align: center;
+}
+
 #jobContainer {
 	width: 80%;
 	margin: 0 auto;
@@ -92,7 +175,8 @@
 .job {
 	float: left;
 	width: 250px;
-	margin-right: 10px;
+	margin-right: 25px;
+	min-height: 400px;
 }
 
 .job div {
@@ -127,6 +211,193 @@
 	font-weight: bold;
 }
 
+#shellContainer {
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	margin-top: 50px;
+}
+
+#phoneShell {
+	position: relative;
+	width: 260px;
+	height: auto;
+	left: -50.2%;
+	margin: 0 auto;
+	margin-top: -50px;
+}
+
+#curProj {
+	color: black;
+	font-weight: bold;
+}
+
+.projectDisplay {
+	text-align: center;
+	margin-top: 25px;
+}
+
+#projCarousel {
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 75px;
+}
+
+#projCarousel.mobile, #projCarousel.mobile .item, #projCarousel.mobile .item img{
+	width: 225px;
+}
+
+#projCarousel.web{
+	min-width: 300px;
+	max-width: 650px;
+	width: 80%;
+} 
+
+#projCarousel .item img{
+	height: auto;
+	margin: 0 auto;
+}
+
+#projCarousel .carousel-control {
+	height: 100%;
+	width: 50px;
+	font-size: 36px;
+	border-radius: 5px;
+}
+
+#projCarousel .carousel-control p {
+	color: white;
+}
+
+#projCarousel.mobile .carousel-control p {
+	margin-top: 300%;
+}
+
+#projCarousel.mobile .carousel-indicators {
+	top: 353px;
+}
+
+#projCarousel.web .carousel-control p {
+	margin-top: 400%;
+}
+
+#projCarousel .carousel-indicators li {
+  	border: 1px solid #000;
+}
+
+#projCarousel .carousel-indicators .active {
+  background-color: #000;
+}
+
+#projDesc {
+	margin: 25px auto;
+}
+
+#projDesc.overview {
+	width: 80%;
+}
+
+#projDesc.stack {
+	min-width: 200px;
+	max-width: 450px;
+	width: 80%;
+}
+
+#projDesc .btn-group button {
+	width: 100px;
+}
+
+#projDesc .btn-group button.active {
+	font-weight: bold;
+}
+
+#stackContainer {
+	min-width: 200px;
+	max-width: 400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#stackContainer .stackPart {
+	float: left;
+	width: 200px;
+}
+
+#stackContainer .stackPart span{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#schoolContainer {
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+#schools {
+	margin: 0 auto;
+	width: 50%;
+	min-width: 300px;
+	max-width: 600px;
+	text-align: center;
+}
+
+.school .accordion-heading {
+	border: 1px solid grey;
+	min-height: 50px; 
+	max-height: 80px;
+	padding: 20px;
+	background-color: #222;
+	border-radius: 15px;
+	margin-top: 10px;
+}
+.school .accordion-heading a {
+	text-decoration: none;
+	font-weight: bold;
+  	color: #5A83A0;
+  	font-size: 14px;
+}
+
+.school .accordion-body {
+	border: 1px solid black;
+	border-top: none;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	width: 95%;
+	margin: 0 auto;
+	background-color: #5A83A0;
+}
+
+.school .accordion-body .accordion-inner span {
+	font-weight: bold;
+}
+
+.school .accordion-body .accordion-inner {
+	padding: 15px;
+}
+
+.graduationDate {
+	color: maroon;
+}
+
+#awardList {
+	min-width: 300px;
+	max-width: 600px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#awardList div {
+	padding: 5px;
+}
+
+.awardPops, .awardPops:hover {
+	text-decoration: none;
+	color: black;
+	cursor: default;
+}
+
 .sectionTitle {
 	text-align: center;
 	font-size: 24px;
@@ -135,33 +406,57 @@
 	font-weight: bold;
 }
 
+.section {
+	padding: 25px 0;
+}
+
 .subTitle {
-	margin-left: 10%;
-	font-size: 18px;
+	margin: 0 auto;
+	font-size: 16px;
 	font-weight: bold;
-}
-
-.miniHorLine {
-	margin: 0px auto;
-	width: 200px;
-	background: black;
-	height: 1px;
-}
-
-.smallHorLine {
-	margin: 0px auto;
-	width: 250px;
-	background: black;
-	height: 1px;
+	text-align: center;
 }
 
 .horLine {
 	margin: 0px auto;
 	width: 80%;
-	background: black;
+	background: lightgrey;
 	height: 1px;
 }
 
 .boldIt {
 	font-weight: bold;
+}
+
+.dropdownArea {
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.dropdown-menu {
+	width: 100%;
+  	background-color: #222;
+}
+
+.dropdown-menu li a {
+	font-weight: bold;
+  	color: #5A83A0;
+	padding: 5px 0px;
+}
+
+
+.dropdown-menu li a:hover {
+  	color: white;
+	background-color: black;
+}
+
+.dropItem {
+	text-align: center;
+}
+
+.btn-scheme {
+  color: white;
+  background-color: #5bc0de;
+  border-color: #46b8da;
 }

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html ng-app="mainModule">
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="lib/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script type="text/javascript" src="lib/js/jquery.min.js"></script>
 		<script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="lib/js/angular.min.js"></script>
+		<script type="text/javascript" src="lib/js/interact-1.2.4.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<title>Alex Bu</title>
 	</head>
-	<body ng-controller="MainController as main">
+	<body data-spy="scroll" data-target=".navbar" ng-controller="MainController as main">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
@@ -20,27 +22,70 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		      <a class="navbar-brand" href="#">ATB</a>
+		      <a class="navbar-brand" href="#headPad" ng-click="main.gotoElement('headPad');">
+  				<span class="glyphicon glyphicon-font" aria-hidden="true"></span>
+  				<span class="glyphicon glyphicon-text-width" aria-hidden="true"></span>
+  				<span class="glyphicon glyphicon-bold" aria-hidden="true"></span>
+		      </a>
 		    </div>
-
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="menubar">
 		      <ul class="nav navbar-nav navbar-right" ng-click="main.closeDropDown();">
-		        <li><a ng-click="main.gotoElement('myProfile');">Profile</a></li>
-		        <li><a ng-click="main.gotoElement('mySkills');">Skills</a></li>
-		        <li><a ng-click="main.gotoElement('myWork');">Work</a></li>
-		        <li><a ng-click="main.gotoElement('myProjects');">Projects</a></li>
-		        <li><a ng-click="main.gotoElement('myEducation');">Education</a></li>
-		        <li><a ng-click="main.gotoElement('myAwards');">Awards</a></li>
+		        <li>
+		        	<a href="#myProfile" ng-click="main.gotoElement('myProfile');">
+		  				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+		        		Profile
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="#mySkills" ng-click="main.gotoElement('mySkills');">
+		  				<span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
+		        		Skills
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="#myWork" ng-click="main.gotoElement('myWork');">
+		  				<span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+		        		Work
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="#myProjects" ng-click="main.gotoElement('myProjects');">
+		  				<span class="glyphicon glyphicon-modal-window" aria-hidden="true"></span>
+		        		Projects
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="#myEducation" ng-click="main.gotoElement('myEducation');">
+		  				<span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+		        		Education
+		        	</a>
+		        </li>
+		        <li>
+		        	<a href="#myAwards" ng-click="main.gotoElement('myAwards');">
+		  				<span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+		        		Awards
+		        	</a>
+		        </li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
 		<div id="headPad"></div>
 		<div id="mainContent">
-			<div id="myProfile" ng-controller="ProfileController as profile">
-				<div id="profPic"></div>
-				<a id="name">{{profile.getFullName()}}</a><br>
+			<div id="alert" class="alert alert-danger">
+			  <button type="button" class="close" ng-click="main.closeAlert();">&times;</button>
+			  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+			  Website is constantly under construction.
+			</div>
+			<div id="myProfile" class="section clearfix" ng-controller="ProfileController as profile">
+				<div id="profPicArea">
+					<div id="profPicInnerArea">
+						<div id="profPic" class="draggable"></div>
+					</div>
+					<div id="profPic2"></div>
+				</div>
+				<p id="name">{{profile.getFullName()}}</p>
 				<p id="age">{{profile.getAge()}}</p>
 				<span class="glyphicon glyphicon-home" aria-hidden="true"></span> {{profile.getHomeTown();}} <br>
 				<span class="glyphicon glyphicon-education" aria-hidden="true"></span> {{profile.getDegree()}}<br>
@@ -51,15 +96,17 @@
 					<span class="boldIt">Objective:</span> 
 					{{profile.getObjective()}}
 				</div>
-			</div><br><br><br><br><br><br><br><br>
+			</div>
 			<div class="horLine"></div>
-			<div id="mySkills" ng-controller="SkillController as skill" anchorSmoothScroll>
+			<div id="mySkills" class="section clearfix" ng-controller="SkillController as skill">
 				<div class="sectionTitle">Skills</div>
-				<ul id="statements">
-					<li ng-repeat="statement in skill.getStatements();">
-						{{statement}}
-					</li>
-				</ul>
+				<div id="statements">
+					<ul>
+						<li ng-repeat="statement in skill.getStatements();">
+							{{statement}}
+						</li>
+					</ul>
+				</div>
 				<div class="subTitle">Familiar Libraries</div>
 				<ul id="libraries">
 					<li ng-repeat="library in skill.getLibraries();">
@@ -74,14 +121,14 @@
 				</ul>
 				<div class="subTitle">Languages</div>
 				<div id="languages">
-					<span class="label label-primary lang" ng-class="{'label-danger': main.isNumeric(lang.rating)&&lang.rating<=5, 'label-warning': main.isNumeric(lang.rating)&&lang.rating<=7, 'label-success': main.isNumeric(lang.rating)&&lang.rating<=10}" ng-repeat="lang in skill.getLanguages();">
+					<span class="label label-primary lang" ng-class="{'label-danger': main.isNumeric(lang.rating)&&lang.rating<=5, 'label-warning': main.isNumeric(lang.rating)&&lang.rating<=7, 'label-success': main.isNumeric(lang.rating)&&lang.rating<=10}" ng-repeat="lang in skill.getLanguages() | orderBy:'name'">
 						<div class="langName">{{lang.name}}</div>
-						<div class="langRate">{{lang.rating}}<span ng-if="main.isNumeric(lang.rating);">/10</span</div>
+						<div class="langRate">{{lang.rating}}<span ng-if="main.isNumeric(lang.rating);">/10</span></div>
 					</span>
 				</div>
-			</div><br><br><br><br><br><br><br><br>
+			</div>
 			<div class="horLine"></div>
-			<div id="myWork" ng-controller="WorkController as work">
+			<div id="myWork" class="section clearfix" ng-controller="WorkController as work">
 				<div class="sectionTitle">Work History</div>
 				<div id="jobContainer">
 					<div class="job panel panel-default" ng-repeat="job in work.getJobs();">
@@ -97,17 +144,93 @@
 							{{job.startDate}} - {{job.endDate}}<br><br>
 							<b>Responsibilities:</b><br>
 							<span ng-repeat="duty in job.duties">
-								- {{duty}}<br>
+								{{duty}}<br>
 							</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div id="myProjects" ng-controller="ProjectController as project">
+			<div class="horLine"></div>
+			<div id="myProjects" class="section clearfix" ng-controller="ProjectController as project">
+				<div class="sectionTitle">Projects</div>
+		  		<div class="dropdownArea dropdown">
+					<a id="curProj" ng-click="project.toggleDropMenu();" class="dropdownArea dropdown-toggle btn btn-scheme" data-toggle="dropdown">{{project.currentProject.title}}</a>
+					<ul id="projMenu" class="dropdown-menu">
+					  <li class="dropItem" ng-click="project.setCurrentProject(proj); project.toggleDropMenu();" ng-repeat="proj in project.projects"><a>{{proj.title}}</a></li>
+					</ul>
+				</div>
+			  	<div id="{{main.hashString(proj.title)}}" class="projectDisplay" ng-repeat="proj in project.projects" ng-if="project.currentProject==proj">
+				  	<p id="projPurpose" class="clearfix">
+				  		<h4>{{proj.purpose}}</h4>
+				  	</p>
+				  	<div id="shellContainer" ng-if="project.isMobile(proj)">
+				  		<img id="phoneShell" ng-src="{{project.phoneShell}}"/>
+				  	</div>
+				  	<div id="projCarousel" data-interval="1000" ng-class="{'mobile': project.isMobile(proj), 'web': project.isWeb(proj)}" class="carousel slide">
+						<ol class="carousel-indicators">
+							<li data-target="#projCarousel" ng-repeat="image in proj.images" data-slide-to="{{$index}}" ng-class="{'active':$index==0}"></li>
+						</ol>
+						<!-- Carousel items -->
+						<div class="carousel-inner">
+							<div class="item" ng-repeat="image in proj.images" ng-class="{'active':$index==0}">
+								<img class="jobLogo" ng-src="{{image}}"/>
+							</div>
+						</div>
+						<!-- Carousel nav -->
+						<a class="carousel-control left" href="#projCarousel" data-slide="prev"><p>&lsaquo;</p></a>
+						<a class="carousel-control right" href="#projCarousel" data-slide="next"><p>&rsaquo;</p></a>
+					</div>
+					<div id="projDesc" class="well well-small" ng-class="{'overview': project.isDescTab('overview'), 'stack': project.isDescTab('stack')}">
+						<div class="btn-group">
+							<button class="btn" ng-class="{'active': project.isDescTab('overview')}" ng-click="project.setDescTab('overview');">Overview</button>
+							<button class="btn" ng-class="{'active': project.isDescTab('stack')}" ng-click="project.setDescTab('stack');">Stack</button>
+						</div><br><br>
+						<p ng-if="project.isDescTab('overview');">{{proj.description}}</p>
+						<div id="stackContainer" class="clearfix" ng-if="project.isDescTab('stack');">
+							<div class="stackPart">
+								<span>Frontend</span>
+								<p ng-repeat="part in proj.stack.frontend">{{part}}</p>
+							</div>
+							<div class="stackPart">
+								<span>Backend</span>
+								<p ng-repeat="part in proj.stack.backend">{{part}}</p>
+							</div>
+						</div>
+					</div>
+			  	</div>
 			</div>
-			<div id="myEducation" ng-controller="EducationController as education">
+			<div class="horLine"></div>
+			<div id="myEducation" class="section" ng-controller="EducationController as education">
+				<div class="sectionTitle">Education</div>
+				<div id="schoolContainer">
+					<div class="accordion" id="schools">
+					  <div class="accordion-group school" ng-repeat="school in education.schools">
+					    <div class="accordion-heading" data-toggle="collapse" data-parent="#schools" href="#school{{main.hashString(school.name)}}">
+					      <a class="accordion-toggle" >
+					        {{school.name}}
+					      </a>
+					    </div>
+					    <div id="school{{main.hashString(school.name)}}" class="accordion-body collapse">
+					      <div class="accordion-inner">
+							<span class="major">{{school.major}}</span><br>
+							<span class="graduationDate" ng-if="school.graduated">{{school.graduated}}<br></span>
+							<span class="schoolAttendance">{{school.startDate}} - {{school.endDate}}</span>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
 			</div>
-			<div id="myAwards" ng-controller="AwardController as award">
+			<div class="horLine"></div>
+			<div id="myAwards" class="section" ng-controller="AwardController as award">
+				<div class="sectionTitle">Awards</div>
+				<div id="awardList">
+				  	<div ng-repeat="cert in award.awards">
+				        <a href="#" class="awardPops" data-trigger="hover click" data-placement="right" data-toggle="tooltip" title="-{{cert.school}}">
+				        	{{cert.title}} - {{cert.period}}
+				        </a>
+				  	</div>
+				</div>
 			</div>
 		</div>
 	</body>
