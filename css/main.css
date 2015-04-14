@@ -1,13 +1,63 @@
+/* Create font used for headers ---------------------------------------------------------------------------------*/
 @font-face {
     font-family: HighTower;
     src: url(../lib/fonts/HTOWERT.TTF);
 }
 
+/*Simple Reset --------------------------------------------------------------------------------------------------*/
 * {
 	margin: 0px;
 	padding: 0px;
 }
 
+/* Misc CSS -----------------------------------------------------------------------------------------------------*/
+#mainContent {
+	cursor: default;
+}
+
+#copyright {
+	text-align: center;
+	padding: 25px;
+}
+
+#copyright p {
+	display: inline-block;
+	font-family: HighTower;
+	font-size: 20px;
+}
+
+.sectionTitle {
+	font-family: HighTower;
+	text-align: center;
+	font-size: 28px;
+	padding: 25px 25px;
+	padding-top: 50px;
+	font-weight: bold;
+}
+
+.section {
+	padding: 25px 0;
+}
+
+.subTitle {
+	font-family: HighTower;
+	font-size: 24px;
+	margin: 0 auto;
+	font-weight: bold;
+	text-align: center;
+}
+
+.boldIt {
+	font-weight: bold;
+}
+
+.btn-scheme {
+  color: white;
+  background-color: #5bc0de;
+  border-color: #46b8da;
+}
+
+/*Alert Bar -----------------------------------------------------------------------------------------------------*/
 #alert {
 	position: absolute;
 	border-radius: 5px;
@@ -25,6 +75,7 @@
 	margin-right: 5px;
 }
 
+/* Menubar -------------------------------------------------------------------------------------------------------*/
 .navbar {
 	font-family: HighTower;
 	font-size: 16px;
@@ -50,10 +101,7 @@
   font-weight: bold;
 }
 
-#mainContent {
-	cursor: default;
-}
-
+/*Profile Area -----------------------------------------------------------------------------------------------------*/
 #profPicArea {
 	width: 270px;
 	height: 270px;
@@ -117,6 +165,7 @@
 	padding: 0px 0px;
 }
 
+/*Skill Area -------------------------------------------------------------------------------------------------------*/
 #mySkills {
     background-image: url("../img/greytile.jpg");
     background-repeat: repeat-xy;
@@ -172,6 +221,7 @@
 	text-align: center;
 }
 
+/*Work Area -------------------------------------------------------------------------------------------------------*/
 #myWork {
     background-image: url("../img/whitetile.jpg");
     background-repeat: repeat-xy;
@@ -221,6 +271,7 @@
 	font-weight: bold;
 }
 
+/*Project Area -------------------------------------------------------------------------------------------------------*/
 #myProjects {
     background-image: url("../img/lightbluetile.jpg");
     background-repeat: repeat-xy;
@@ -365,6 +416,33 @@
 	font-weight: bold;
 }
 
+.dropdownArea {
+	text-align: center;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.dropdown-menu {
+	width: 100%;
+  	background-color: #222;
+}
+
+.dropdown-menu li a {
+	font-weight: bold;
+  	color: #5A83A0;
+	padding: 5px 0px;
+}
+
+.dropdown-menu li a:hover {
+  	color: white;
+	background-color: black;
+}
+
+.dropItem {
+	text-align: center;
+}
+
+/*Education Area -------------------------------------------------------------------------------------------------------*/
 #myEducation {
     background-image: url("../img/greytile.jpg");
     background-repeat: repeat-xy;
@@ -421,6 +499,7 @@
 	color: maroon;
 }
 
+/*Award Area -------------------------------------------------------------------------------------------------------*/
 #myAwards {
     background-image: url("../img/darktile.jpg");
     background-repeat: repeat-xy;
@@ -444,80 +523,4 @@
 	text-decoration: none;
 	color: white;
 	cursor: default;
-}
-
-#copyright {
-	text-align: center;
-	padding: 25px;
-}
-
-#copyright p {
-	display: inline-block;
-	font-family: HighTower;
-	font-size: 20px;
-}
-
-.sectionTitle {
-	font-family: HighTower;
-	text-align: center;
-	font-size: 28px;
-	padding: 25px 25px;
-	padding-top: 50px;
-	font-weight: bold;
-}
-
-.section {
-	padding: 25px 0;
-}
-
-.subTitle {
-	font-family: HighTower;
-	font-size: 24px;
-	margin: 0 auto;
-	font-weight: bold;
-	text-align: center;
-}
-
-.horLine {
-	margin: 0px auto;
-	width: 80%;
-	background: lightgrey;
-	height: 1px;
-}
-
-.boldIt {
-	font-weight: bold;
-}
-
-.dropdownArea {
-	text-align: center;
-	width: 300px;
-	margin: 0 auto;
-}
-
-.dropdown-menu {
-	width: 100%;
-  	background-color: #222;
-}
-
-.dropdown-menu li a {
-	font-weight: bold;
-  	color: #5A83A0;
-	padding: 5px 0px;
-}
-
-
-.dropdown-menu li a:hover {
-  	color: white;
-	background-color: black;
-}
-
-.dropItem {
-	text-align: center;
-}
-
-.btn-scheme {
-  color: white;
-  background-color: #5bc0de;
-  border-color: #46b8da;
 }
