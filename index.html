@@ -18,6 +18,7 @@
 		<script type="text/javascript" src="js/work.js"></script>
 		<script type="text/javascript" src="js/project.js"></script>
 		<script type="text/javascript" src="js/education.js"></script>
+		<script type="text/javascript" src="js/award.js"></script>
 		<title>Alex Bu - Software Engineer</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" ng-controller="MainController as main">
@@ -90,22 +91,8 @@
 			<skill></skill>
 			<work></work>
 			<project></project>
-			
-			<div id="myAwards" class="section" ng-controller="AwardController as award">
-				<div class="sectionTitle">Awards</div>
-				<div id="awardList">
-				  	<div ng-repeat="cert in award.awards">
-				        <a class="awardPops" data-trigger="hover click" data-placement="right" data-toggle="tooltip" title="-{{cert.school}}">
-				        	{{cert.title}} - {{cert.period}}
-				        </a>
-				  	</div>
-				</div>
-				<div id="copyright">
-					<p>Copyright</p>
-			  		<span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
-			  		<p>2015 Alex Bu</p>
-				</div>
-			</div>
+			<education></education>
+			<award></award>
 		</div>
 	</body>
 </html>

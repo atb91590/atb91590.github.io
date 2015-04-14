@@ -6,39 +6,6 @@
 		author: "Alex Bu"
 	}
 
-	var myAwards = [
-		{
-			title:"Presidents' List",
-			school:"CSULB",
-			period:'Fall 2014'
-		},
-		{
-			title:"Deans' List",
-			school:"CSULB",
-			period:'Spring 2014'
-		},
-		{
-			title:"Deans' List",
-			school:"CSULB",
-			period:'Fall 2013'
-		},
-		{
-			title:"Presidents' List",
-			school:"CSULB",
-			period:'Spring 2013'
-		},
-		{
-			title:"Presidents' List",
-			school:"CSULB",
-			period:'Fall 2012'
-		},
-		{
-			title:"Deans' List",
-			school:"LBCC",
-			period:'Spring 2012'
-		}
-	];
-
 	app.controller('MainController', function($scope, $location, anchorSmoothScroll){
 		this.metaTags = metaItems;
 		this.getMetaDescription = function(){
@@ -102,14 +69,6 @@
             });
 	    }
 	})
-	.controller('AwardController', function($scope){
-	    //Activate Tooltip Popups
-	    $(function(){
-	    	$('.awardPops').tooltip();
-	    });
-		this.awards = myAwards;
-	})
-
 	.service('anchorSmoothScroll', function(){
 	    this.scrollTo = function(eID) {
 	        var startY = currentYPosition();
