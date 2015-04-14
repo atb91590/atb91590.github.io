@@ -5,28 +5,6 @@
 		description: "Alex Taing Bu Software Engineer",
 		author: "Alex Bu"
 	}
-	
-	var mySchools = [
-		{
-			name:'California State University, Long Beach',
-			major:'Computer Science',
-			graduated:'Graduated December 2014',
-			startDate:'September 2012',
-			endDate:'December 2014'
-		},
-		{
-			name:'Long Beach City College',
-			major:'Computer Science',
-			startDate:'January 2010',
-			endDate:'June 2012'
-		},
-		{
-			name:'California Polytechnic State University, San Luis Obispo',
-			major:'Computer Science',
-			startDate:'September 2008',
-			endDate:'January 2010'
-		}
-	];
 
 	var myAwards = [
 		{
@@ -123,9 +101,6 @@
                 $('#alert').alert('close');
             });
 	    }
-	})
-	.controller('EducationController', function($scope){
-		this.schools = mySchools;
 	})
 	.controller('AwardController', function($scope){
 	    //Activate Tooltip Popups

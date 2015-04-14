@@ -1,0 +1,21 @@
+<div id="myEducation" ng-app="educationDirective" class="section">
+	<div class="sectionTitle">Education</div>
+	<div id="schoolContainer">
+		<div class="accordion" id="schools">
+		  <div class="accordion-group school" ng-repeat="school in education.schools">
+		    <div class="accordion-heading" data-toggle="collapse" data-parent="#schools" href="#school{{main.hashString(school.name)}}">
+		      <a class="accordion-toggle" >
+		        {{school.name}}
+		      </a>
+		    </div>
+		    <div id="school{{main.hashString(school.name)}}" class="accordion-body collapse">
+		      <div class="accordion-inner">
+				<span class="major">{{school.major}}</span><br>
+				<span class="graduationDate" ng-if="school.graduated">{{school.graduated}}<br></span>
+				<span class="schoolAttendance">{{school.startDate}} - {{school.endDate}}</span>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+</div>
