@@ -5,7 +5,12 @@
 		return {
 			restrict: 'E',
 			templateUrl: 'menubar.html',
-			link: menubarController
+			controller: menubarController,
+			controllerAs: 'menu',
+			scope: {
+				control: '='
+			},
+			link: menubarLink
 		};
 	}])
 
@@ -58,7 +63,11 @@
 	    
 	});
 
-	var menubarController = function(scope, element, attrs){
+	var menubarController = function(){
+		this.menubarControl = {};
+	}
+
+	var menubarLink = function(scope, element, attrs){
 		scope.internalControl = scope.control || {};
 		scope.internalControl.gotoElement = function (eID){
 	      $location.hash('bottom');
