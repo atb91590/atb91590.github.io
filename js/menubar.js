@@ -59,6 +59,7 @@
 	});
 
 	var menubarController = function(scope, element, attrs){
+		scope.internalControl = scope.controll || {};
 		scope.internalControl.gotoElement = function (eID){
 	      $location.hash('bottom');
 	      anchorSmoothScroll.scrollTo(eID);
