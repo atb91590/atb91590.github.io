@@ -1,6 +1,11 @@
 (function(){
 	var app = angular.module('mainModule',[]);
 
+	var metaItems = {
+		description: "Alex Taing Bu Software Engineer",
+		author: "Alex Bu"
+	}
+
 	var self = {
 		name:{
 			firstName:'Alex',
@@ -224,6 +229,13 @@
 	];
 
 	app.controller('MainController', function($scope, $location, anchorSmoothScroll){
+		this.metaTags = metaItems;
+		this.getMetaDescription = function(){
+			return this.metaTags.description;
+		}
+		this.getMetaAuthor = function(){
+			return this.metaTags.author;
+		}
 		// Start: Activate Draggable Content------------------------------------------------
 		interact('.draggable').draggable({
 		    inertia: true,
