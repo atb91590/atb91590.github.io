@@ -6,7 +6,8 @@
 			restrict: 'E',
 			templateUrl: 'menubar.html',
 			controller: menubarController,
-			controllerAs: 'menu'
+			controllerAs: 'menu',
+			link: menubarController
 		};
 	}])
 
