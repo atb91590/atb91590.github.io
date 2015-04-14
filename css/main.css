@@ -1,3 +1,8 @@
+@font-face {
+    font-family: HighTower;
+    src: url(../lib/fonts/HTOWERT.TTF);
+}
+
 * {
 	margin: 0px;
 	padding: 0px;
@@ -7,6 +12,8 @@
 	position: absolute;
 	border-radius: 5px;
 	width: 99%;
+	left: 0;
+	right: 0;
 	margin: 0 auto;
 	margin-top: 55px;
 	text-align: center;
@@ -19,6 +26,8 @@
 }
 
 .navbar {
+	font-family: HighTower;
+	font-size: 16px;
     box-shadow: 0 4px 10px -2px #232323;
     -moz-box-shadow: 0 4px 10px -2px #232323;
     -webkit-box-shadow: 0 4px 10px -2px #232323;
@@ -97,9 +106,8 @@
 }
 
 #name {
-	font-size: 24px;
-	color: black;
-	font-weight: bold;
+	font-family: HighTower;
+	font-size: 32px;
 	text-decoration: none;
 }
 
@@ -439,6 +447,7 @@
 }
 
 .sectionTitle {
+	font-family: HighTower;
 	text-align: center;
 	font-size: 28px;
 	padding: 25px 25px;
@@ -451,8 +460,9 @@
 }
 
 .subTitle {
+	font-family: HighTower;
+	font-size: 24px;
 	margin: 0 auto;
-	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
 }
