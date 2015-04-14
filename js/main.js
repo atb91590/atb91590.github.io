@@ -1,5 +1,6 @@
 (function(){
-	var app = angular.module('mainModule',['profileDirective','skillDirective']);
+	var app = angular.module('mainModule',
+		['menubarDirective','profileDirective','skillDirective','workDirective','projectDirective','educationDirective','awardDirective']);
 
 	var metaItems = {
 		description: "Alex Taing Bu Software Engineer",
@@ -51,18 +52,9 @@
 			}
 			return hash;
 	    }
-
-		this.closeDropDown = function(){
-			var bar = angular.element(document.getElementById('menubar'));
-			bar.collapse('hide');
-		}
 		this.isNumeric = function(num){
 			return !isNaN(num) && isFinite(num);
 		}
-		this.gotoElement = function (eID){
-	      $location.hash('bottom');
-	      anchorSmoothScroll.scrollTo(eID);
-	    };
 	    this.closeAlert = function(){
 	    	$('#alert').fadeTo(300, 0.5).slideUp(500, function () {
                 $('#alert').alert('close');
