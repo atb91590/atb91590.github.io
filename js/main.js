@@ -5,34 +5,6 @@
 		description: "Alex Taing Bu Software Engineer",
 		author: "Alex Bu"
 	}
-
-	var myJobs = [
-		{
-			title:'Fiscal Systems Intern',
-			logo:'img/jobs/bss_logo_transparent.png',
-			employer:'City of Los Angeles',
-			city:'Los Angeles',
-			state:'California',
-			startDate:'June 2013',
-			endDate:'Present',
-			duties:[
-				'Sole Full Stack Developer of intranet applications',
-				'Collaborate with interns to enhance LABSS Android App'
-			]
-		},
-		{
-			title:'Technology College Aide',
-			logo:'img/jobs/lbusd.png',
-			employer:'Long Beach Unified School District',
-			city:'Long Beach',
-			state:'California',
-			startDate:'February 2012',
-			endDate:'June 2013',
-			duties:[
-				'Customer Service + Software & Hardware Installation/Troubleshooting'
-			]
-		},
-	];
 	var phoneImage = 'img/projects/galaxys6shell.gif';
 	var myProjects = [
 		{
@@ -234,12 +206,6 @@
                 $('#alert').alert('close');
             });
 	    }
-	})
-	.controller('WorkController', function($scope){
-		this.jobs = myJobs;
-		this.getJobs = function() {
-			return this.jobs;
-		}
 	})
 	.controller('ProjectController', function($scope){
 		this.phoneShell = phoneImage;

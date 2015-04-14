@@ -15,6 +15,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/profile.js"></script>
 		<script type="text/javascript" src="js/skill.js"></script>
+		<script type="text/javascript" src="js/work.js"></script>
 		<title>Alex Bu - Software Engineer</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" ng-controller="MainController as main">
@@ -85,28 +86,7 @@
 			</div>
 			<profile></profile>
 			<skill></skill>
-			<div id="myWork" class="section clearfix" ng-controller="WorkController as work">
-				<div class="sectionTitle">Work History</div>
-				<div id="jobContainer">
-					<div class="job panel panel-default" ng-repeat="job in work.getJobs();">
-						<div class="panel-heading">
-						    <h3 class="panel-title jobTitle">{{job.title}}</h3>
-						  </div>
-						<div class="jobLogoContainer">
-							<img class="jobLogo" ng-src="{{job.logo}}"/>
-						</div>
-						<div class="jobDuties">
-							{{job.employer}}<br>
-							{{job.city}}, {{job.state}}<br>
-							{{job.startDate}} - {{job.endDate}}<br><br>
-							<b>Responsibilities:</b><br>
-							<span ng-repeat="duty in job.duties">
-								{{duty}}<br>
-							</span>
-						</div>
-					</div>
-				</div>
-			</div>
+			<work></work>
 			<div id="myProjects" class="section clearfix" ng-controller="ProjectController as project">
 				<div class="sectionTitle">Projects</div>
 		  		<div class="dropdownArea dropdown">
