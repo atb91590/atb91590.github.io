@@ -5,8 +5,6 @@
 		return {
 			restrict: 'E',
 			templateUrl: 'menubar.html',
-			controller: menubarController,
-			controllerAs: 'menu',
 			link: menubarController
 		};
 	}])
@@ -60,12 +58,12 @@
 	    
 	});
 
-	var menubarController = function(){
-		this.gotoElement = function (eID){
+	var menubarController = function(scope, element, attrs){
+		scope.internalControl.gotoElement = function (eID){
 	      $location.hash('bottom');
 	      anchorSmoothScroll.scrollTo(eID);
 	    };
-		this.closeDropDown = function(){
+		scope.internalControl.closeDropDown = function(){
 			var bar = angular.element(document.getElementById('menubar'));
 			bar.collapse('hide');
 		}
