@@ -446,6 +446,17 @@
 	cursor: default;
 }
 
+#copyright {
+	text-align: center;
+	padding: 25px;
+}
+
+#copyright p {
+	display: inline-block;
+	font-family: HighTower;
+	font-size: 20px;
+}
+
 .sectionTitle {
 	font-family: HighTower;
 	text-align: center;
