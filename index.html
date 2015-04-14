@@ -14,6 +14,7 @@
 		<script type="text/javascript" src="lib/js/interact-1.2.4.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/profile.js"></script>
+		<script type="text/javascript" src="js/skill.js"></script>
 		<title>Alex Bu - Software Engineer</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" ng-controller="MainController as main">
@@ -83,35 +84,7 @@
 			  Website is under constant construction.
 			</div>
 			<profile></profile>
-			<div id="mySkills" class="section clearfix" ng-controller="SkillController as skill">
-				<div class="sectionTitle">Skills</div>
-				<div id="statements">
-					<ul>
-						<li ng-repeat="statement in skill.getStatements();">
-							{{statement}}
-						</li>
-					</ul>
-				</div>
-				<div class="subTitle">Familiar Libraries</div>
-				<ul id="libraries">
-					<li ng-repeat="library in skill.getLibraries();">
-						{{library}}
-					</li>
-				</ul>
-				<div class="subTitle">Framework Experience</div>
-				<ul id="frameworks">
-					<li ng-repeat="framework in skill.getFrameworks();">
-						{{framework}}
-					</li>
-				</ul>
-				<div class="subTitle">Languages</div>
-				<div id="languages">
-					<span class="label label-primary lang" ng-class="{'label-danger': main.isNumeric(lang.rating)&&lang.rating<=5, 'label-warning': main.isNumeric(lang.rating)&&lang.rating<=7, 'label-success': main.isNumeric(lang.rating)&&lang.rating<=10}" ng-repeat="lang in skill.getLanguages() | orderBy:'name'">
-						<div class="langName">{{lang.name}}</div>
-						<div class="langRate">{{lang.rating}}<span ng-if="main.isNumeric(lang.rating);">/10</span></div>
-					</span>
-				</div>
-			</div>
+			<skill></skill>
 			<div id="myWork" class="section clearfix" ng-controller="WorkController as work">
 				<div class="sectionTitle">Work History</div>
 				<div id="jobContainer">
