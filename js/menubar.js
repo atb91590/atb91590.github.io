@@ -8,7 +8,7 @@
 			controller: menubarController,
 			controllerAs: 'menu'
 		};
-	})
+	}])
 
 	.service('anchorSmoothScroll', function(){
 	    this.scrollTo = function(eID) {
