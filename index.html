@@ -71,7 +71,6 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-		<div id="headPad"></div>
 		<div id="mainContent">
 			<div id="alert" class="alert alert-danger">
 			  <button type="button" class="close" ng-click="main.closeAlert();">&times;</button>
@@ -97,7 +96,6 @@
 					{{profile.getObjective()}}
 				</div>
 			</div>
-			<div class="horLine"></div>
 			<div id="mySkills" class="section clearfix" ng-controller="SkillController as skill">
 				<div class="sectionTitle">Skills</div>
 				<div id="statements">
@@ -127,7 +125,6 @@
 					</span>
 				</div>
 			</div>
-			<div class="horLine"></div>
 			<div id="myWork" class="section clearfix" ng-controller="WorkController as work">
 				<div class="sectionTitle">Work History</div>
 				<div id="jobContainer">
@@ -160,10 +157,11 @@
 					</ul>
 				</div>
 			  	<div id="{{main.hashString(proj.title)}}" class="projectDisplay" ng-repeat="proj in project.projects" ng-if="project.currentProject==proj">
-				  	<p id="projPurpose" class="clearfix">
-				  		<h4>{{proj.purpose}}</h4>
+				  	<p id="projPurpose">
+				  		{{proj.purpose}}
 				  	</p>
 				  	<div id="shellContainer" ng-if="project.isMobile(proj)">
+				  		<div id="phoneShadow"></div>
 				  		<img id="phoneShell" ng-src="{{project.phoneShell}}"/>
 				  	</div>
 				  	<div id="projCarousel" data-interval="1000" ng-class="{'mobile': project.isMobile(proj), 'web': project.isWeb(proj)}" class="carousel slide">

@@ -4,10 +4,11 @@
 }
 
 #alert {
+	position: absolute;
 	border-radius: 5px;
 	width: 99%;
 	margin: 0 auto;
-	margin-top: 0.5%;
+	margin-top: 55px;
 	text-align: center;
 	padding: 5px 0px;
 	padding-left: 5px;
@@ -15,11 +16,6 @@
 
 #alert .close {
 	margin-right: 5px;
-}
-
-#headPad {
-	height: 50px; 
-	background-color: black;
 }
 
 .navbar {
@@ -85,8 +81,12 @@
 }
 
 #myProfile {
-	padding-top: 125px;
+	padding-top: 175px;
 	text-align: center;
+    background-image: url("../img/darktile.jpg");
+    background-repeat: repeat-xy;
+    color: white;
+    border-bottom: 5px solid grey;
 }
 
 #objective {
@@ -107,6 +107,11 @@
 	font-size: 18px;
 	margin: 0px 0px;
 	padding: 0px 0px;
+}
+
+#mySkills {
+    background-image: url("../img/greytile.jpg");
+    background-repeat: repeat-xy;
 }
 
 #mySkills ul {
@@ -159,6 +164,11 @@
 	text-align: center;
 }
 
+#myWork {
+    background-image: url("../img/whitetile.jpg");
+    background-repeat: repeat-xy;
+}
+
 #jobContainer {
 	width: 80%;
 	margin: 0 auto;
@@ -203,9 +213,14 @@
 	font-weight: bold;
 }
 
+#myProjects {
+    background-image: url("../img/lightbluetile.jpg");
+    background-repeat: repeat-xy;
+}
+
 #shellContainer {
 	position: absolute;
-	z-index: -1;
+	z-index: 0;
 	left: -1px;
 	right: 0;
 	margin: 0 auto;
@@ -220,6 +235,21 @@
 	margin-top: -50px;
 }
 
+#phoneShadow {
+	position: absolute;
+	box-shadow: 10px 15px 15px 5px #232323;
+	-moz-box-shadow: 0 0px 25px 0px #232323;
+    -webkit-box-shadow: 10px 15px 15px 5px #232323;
+	border-radius: 35px;
+	width: 255px;
+	height: 450px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	margin-top: -50px;
+	opacity: .8;
+}
+
 #curProj {
 	color: black;
 	font-weight: bold;
@@ -228,6 +258,10 @@
 .projectDisplay {
 	text-align: center;
 	margin-top: 25px;
+}
+
+#projPurpose {
+	font-size: 20px;
 }
 
 #projCarousel {
@@ -284,6 +318,8 @@
 
 #projDesc {
 	margin: 25px auto;
+	border: 3px outset lightgrey;
+	border-radius: 15px;
 }
 
 #projDesc.overview {
@@ -321,6 +357,11 @@
 	font-weight: bold;
 }
 
+#myEducation {
+    background-image: url("../img/greytile.jpg");
+    background-repeat: repeat-xy;
+}
+
 #schoolContainer {
 	margin: 0 auto;
 	margin-bottom: 100px;
@@ -355,7 +396,7 @@
 	border-top: none;
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
-	width: 95%;
+	width: 90%;
 	margin: 0 auto;
 	background-color: #5A83A0;
 }
@@ -370,6 +411,12 @@
 
 .graduationDate {
 	color: maroon;
+}
+
+#myAwards {
+    background-image: url("../img/darktile.jpg");
+    background-repeat: repeat-xy;
+    color: white;
 }
 
 #awardList {
@@ -387,13 +434,13 @@
 
 .awardPops, .awardPops:hover {
 	text-decoration: none;
-	color: black;
+	color: white;
 	cursor: default;
 }
 
 .sectionTitle {
 	text-align: center;
-	font-size: 24px;
+	font-size: 28px;
 	padding: 25px 25px;
 	padding-top: 50px;
 	font-weight: bold;
