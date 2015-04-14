@@ -1,5 +1,5 @@
 (function(){
-	var app = angular.module('mainModule',['profile-directive']);
+	var app = angular.module('mainModule',['profileDirective']);
 
 	var metaItems = {
 		description: "Alex Taing Bu Software Engineer",
