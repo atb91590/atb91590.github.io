@@ -5,11 +5,11 @@
 		return {
 			restrict: 'E',
 			templateUrl: 'menubar.html',
-			controller: menubarController
+			controller: menubarController,
 			controllerAs: 'menu'
 		};
 	})
-	
+
 	.service('anchorSmoothScroll', function(){
 	    this.scrollTo = function(eID) {
 	        var startY = currentYPosition();
