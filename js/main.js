@@ -1,3 +1,7 @@
+window.addEventListener('load', function() {
+    new FastClick(document.body);
+}, false);
+
 (function(){
 	var app = angular.module('mainModule',[]);
 
