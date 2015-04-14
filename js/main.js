@@ -297,6 +297,9 @@
 		this.getHomeTown = function(){
 			return this.myself.hometown;
 		}
+		this.getHomeTownUrlFormat = function(){
+			return this.myself.hometown.replace(" ","+");
+		}
 		this.getPhoneNumber = function(){
 			return this.myself.contact.phone;
 		}

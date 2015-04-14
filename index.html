@@ -9,7 +9,7 @@
 		<script type="text/javascript" src="lib/js/angular.min.js"></script>
 		<script type="text/javascript" src="lib/js/interact-1.2.4.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<title>Alex Bu</title>
+		<title>Alex Bu - Software Engineer</title>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" ng-controller="MainController as main">
 		<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -87,7 +87,7 @@
 				<p id="name">{{profile.getFullName()}}</p>
 				<p id="age">{{profile.getAge()}}</p>
 				<span class="glyphicon glyphicon-home" aria-hidden="true"></span> 
-					<a href="geo:-118.1561095,33.8042685" target="_blank">
+					<a href="https://maps.google.com/?q={{profile.getHomeTownUrlFormat()}}" target="_blank">
 						{{profile.getHomeTown();}}
 					</a><br>
 				<span class="glyphicon glyphicon-education" aria-hidden="true"></span> 
