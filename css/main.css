@@ -270,7 +270,11 @@
 	float: left;
 	width: 250px;
 	margin-right: 25px;
-	min-height: 400px;
+	min-height: 425px;
+	box-shadow: 5px 5px 10px 3px #232323;
+	-moz-box-shadow: 5px 5px 10px 3px #232323;
+    -webkit-box-shadow: 5px 5px 10px 3px #232323;
+    opacity: .7;
 }
 
 .job div {
@@ -332,7 +336,7 @@
 #phoneShadow {
 	position: absolute;
 	box-shadow: 10px 15px 15px 5px #232323;
-	-moz-box-shadow: 0 0px 25px 0px #232323;
+	-moz-box-shadow: 10px 15px 15px 5px #232323;
     -webkit-box-shadow: 10px 15px 15px 5px #232323;
 	border-radius: 35px;
 	width: 255px;
