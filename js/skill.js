@@ -96,6 +96,8 @@
 			return this.skills.languages;
 		}
 		this.getLanguageRate = function(rate){
+			if (!isNumeric(rate))
+				return 'label-primary';
 			if (rate<=5)
 				return 'label-danger';
 			else if (rate<=7)
