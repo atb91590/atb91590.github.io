@@ -28,7 +28,7 @@
 				rate: 8
 			},
 			{
-				type: 'Google Maps Android',
+				type: 'Google Maps',
 				rate: 6
 			},
 			{
@@ -65,7 +65,7 @@
 			{name:'Objective-C', 	rate:'Exposed'},
 			{name:'Python', 		rate:'Beginner'},
 			{name:'Ruby', 			rate:'Exposed'},
-			{name:'MatLab', 		rate:'Okay'}
+			{name:'MatLab', 		rate:5}
 		]
 	};
 
