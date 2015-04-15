@@ -198,12 +198,13 @@
 #mySkills {
     background-image: url("../img/greytile.jpg");
     background-repeat: repeat-xy;
+    border-bottom: 5px solid lightgrey;
 }
 
 #rateLegend {
 	width: 285px;
 	margin: 0 auto;
-	border: 1px solid black;
+	border: 1px solid lightgrey;
 	border-radius: 15px;
 }
 
@@ -211,6 +212,7 @@
 	width: 85px;
 	float: left;
 	padding: 5px;
+	text-align: center;
 }
 
 #statements, #libraries, #frameworks {
@@ -256,6 +258,7 @@
 #myWork {
     background-image: url("../img/whitetile.jpg");
     background-repeat: repeat-xy;
+    border-bottom: 5px solid lightblue;
 }
 
 #jobContainer {
@@ -306,6 +309,7 @@
 #myProjects {
     background-image: url("../img/lightbluetile.jpg");
     background-repeat: repeat-xy;
+    border-bottom: 5px solid lightgrey;
 }
 
 #shellContainer {
@@ -477,6 +481,7 @@
 #myEducation {
     background-image: url("../img/greytile.jpg");
     background-repeat: repeat-xy;
+    border-bottom: 5px solid grey;
 }
 
 #schoolContainer {
