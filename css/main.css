@@ -201,14 +201,14 @@
 }
 
 #rateLegend {
-	width: 255px;
+	width: 285px;
 	margin: 0 auto;
 	border: 1px solid black;
 	border-radius: 15px;
 }
 
 .rateKey {
-	width: 75px;
+	width: 85px;
 	float: left;
 	padding: 5px;
 }
