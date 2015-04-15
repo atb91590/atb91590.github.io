@@ -96,7 +96,7 @@
 			return this.skills.languages;
 		}
 		this.getLanguageRate = function(rate){
-			if (!numCheck(rate))
+			if (!isNumeric(rate))
 				return 'label-primary';
 			if (rate<=5)
 				return 'label-danger';
@@ -115,7 +115,8 @@
 		}
 	};
 
-	var numCheck = function(num){
+	function isNumeric(num){
 		return !isNaN(num) && isFinite(num);
 	}
+	var numCheck = isNumeric;
 })();
