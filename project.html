@@ -1,6 +1,6 @@
 <div id="myProjects" ng-app="projectDirective" class="section clearfix">
 	<div class="sectionTitle">Projects</div>
-	<div id="curProjButton" class="dropdownArea dropdown">
+	<div class="dropdownArea dropdown">
 		<a id="curProj" ng-click="project.toggleDropMenu();" class="dropdownArea dropdown-toggle btn btn-scheme" data-toggle="dropdown">{{project.currentProject.title}}</a>
 		<ul id="projMenu" class="dropdown-menu">
 		  <li class="dropItem" ng-click="project.setCurrentProject(proj); project.toggleDropMenu();" ng-repeat="proj in project.projects"><a>{{proj.title}}</a></li>

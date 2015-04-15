@@ -347,13 +347,10 @@
 	opacity: .8;
 }
 
-#curProjButton {
-	border: 10px outset #5A83A0;
-}
-
 #curProj {
 	color: black;
 	font-weight: bold;
+	border: 10px outset #5A83A0;
 }
 
 .projectDisplay {
