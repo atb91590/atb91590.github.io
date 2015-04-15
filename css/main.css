@@ -208,6 +208,7 @@
 
 #statements div, #libraries div, #frameworks div {
 	width: 150px;
+	float: left;
 }
 
 #languages {
