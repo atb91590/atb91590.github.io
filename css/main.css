@@ -166,6 +166,7 @@
 }
 
 #websites {
+	padding-top: 10px;
 	min-width: 60px;
 	max-width: 120px;
 	width: 30%;
@@ -173,6 +174,7 @@
 }
 
 .siteContainer, .siteContainer a img {
+	padding: 0 5px;
 	min-width: 30px;
 	max-width: 60px;
 	width: 15%;
