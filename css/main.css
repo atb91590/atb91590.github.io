@@ -57,6 +57,22 @@
   border-color: #46b8da;
 }
 
+.badge.low, .badge.med, .badge.high {
+  padding: 1px 5px;
+}
+
+.badge.low {
+  background-color: #66FFFF;
+}
+
+.badge.med {
+  background-color: #0099FF;	
+}
+
+.badge.high {
+  background-color: #000099;	
+}
+
 /*Alert Bar -----------------------------------------------------------------------------------------------------*/
 #alert {
 	position: absolute;
@@ -184,18 +200,14 @@
     background-repeat: repeat-xy;
 }
 
-#mySkills ul {
-	padding: 25px;
-	list-style: none;
-}
-
-#statements {
-	width: 300px;
+#statements, #libraries, #frameworks {
+	min-width: 400px;
+	width: 80%;
 	margin: 0 auto;
 }
 
-#statements ul {
-	list-style: circle;
+#statements div, #libraries div, #frameworks div {
+	width: 150px;
 }
 
 #languages {
@@ -223,15 +235,6 @@
 
 .langRate {
 	width: 75px;
-}
-
-#libraries, #frameworks {
-	width: 300px;
-	margin: 0 auto;
-}
-
-#libraries li, #frameworks li {
-	text-align: center;
 }
 
 /*Work Area -------------------------------------------------------------------------------------------------------*/

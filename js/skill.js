@@ -1,33 +1,71 @@
 (function(){
 	var mySkills = {
-		statements:[
-			'Experience in AGILE project workflow',
-			'GIT version control',
-			'Strong verbal/written skills',
-			'Familiar with Bayesian Classification',
-			'Familiar with NP-Complete Problems'
+		general:[
+			{
+				type: 'AGILE',
+				rate: 6
+			},
+			{
+				type: 'GIT',
+				rate: 8
+			},
+			{
+				type: 'Team Cooperation',
+				rate: 8
+			},
+			{
+				type: 'Bayesian Probability',
+				rate: 6
+			},
+			{
+				type: 'NP-Complete',
+				rate: 7
+			}
 		],
 		libraries:[
-			'jQuery/jQueryUI/jQuery Mobile',
-			'Google Maps (Android)'
+			{
+				type: 'jQuery/jQueryUI',
+				rate: 8
+			},
+			{
+				type: 'Google Maps - Android',
+				rate: 6
+			},
+			{
+				type: 'InteractJS',
+				rate: 4
+			}
 		],
 		frameworks:[
-			'AngularJS',
-			'IonicFramework',
-			'Android'
+			{
+				type: 'AngularJS',
+				rate: 7
+			},
+			{
+				type: 'IonicFramework',
+				rate: 6
+			},
+			{
+				type: 'BootStrap',
+				rate: 7
+			},
+			{
+				type: 'Android',
+				rate: 7
+			}
 		],
 		languages:[
-			{name:'Java', 			rating:8},
-			{name:'C/C++', 			rating:5},
-			{name:'HTML', 			rating:8},
-			{name:'CSS', 			rating:8},
-			{name:'Javascript', 	rating:7},
-			{name:'Cold Fusion', 	rating:8},
-			{name:'SQL', 			rating:8},
-			{name:'Objective-C', 	rating:'Exposed'},
-			{name:'Python', 		rating:'Beginner'},
-			{name:'Ruby', 			rating:'Exposed'},
-			{name:'MatLab', 		rating:'Okay'}
+			{name:'Java', 			rate:8},
+			{name:'C/C++', 			rate:5},
+			{name:'HTML', 			rate:8},
+			{name:'CSS', 			rate:8},
+			{name:'Javascript', 	rate:7},
+			{name:'Cold Fusion', 	rate:8},
+			{name:'SQL', 			rate:8},
+			{name:'Objective-C', 	rate:'Exposed'},
+			{name:'Python', 		rate:'Beginner'},
+			{name:'Ruby', 			rate:'Exposed'},
+			{name:'MatLab', 		rate:'Okay'}
 		]
 	};
 
@@ -44,8 +82,9 @@
 
 	var skillController = function(){
 		this.skills = mySkills;
-		this.getStatements = function(){
-			return this.skills.statements;
+		this.isNumeric = numCheck;
+		this.getGeneral = function(){
+			return this.skills.general;
 		}
 		this.getLibraries = function(){
 			return this.skills.libraries;
@@ -56,5 +95,27 @@
 		this.getLanguages = function(){
 			return this.skills.languages;
 		}
+		this.getLanguageRate = function(rate){
+			if (!isNumeric(rate))
+				return 'label-primary';
+			if (rate<=5)
+				return 'label-danger';
+			else if (rate<=7)
+				return 'label-warning';
+			else
+				return 'label-success';
+		}
+		this.getSkillRate = function(rate){
+			if (rate<=5)
+				return 'low';
+			else if (rate<=7)
+				return 'med';
+			else
+				return 'high';			
+		}
 	};
+
+	var numCheck = function isNumeric(num){
+		return !isNaN(num) && isFinite(num);
+	}
 })();

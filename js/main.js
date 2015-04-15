@@ -56,9 +56,6 @@
 			var bar = angular.element(document.getElementById('menubar'));
 			bar.collapse('hide');
 		}
-		this.isNumeric = function(num){
-			return !isNaN(num) && isFinite(num);
-		}
 		this.gotoElement = function (eID){
 	      $location.hash('bottom');
 	      anchorSmoothScroll.scrollTo(eID);
