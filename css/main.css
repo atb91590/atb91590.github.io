@@ -200,9 +200,20 @@
     background-repeat: repeat-xy;
 }
 
+#rateLegend {
+	width: 330px;
+	margin: 0 auto;
+}
+
+.rateKey {
+	width: 100px;
+	float: left;
+	padding: 5px;
+}
+
 #statements, #libraries, #frameworks {
 	min-width: 300px;
-	width: 60%;
+	width: 70%;
 	margin: 25px auto;
 	padding: 0 15px;
 }
