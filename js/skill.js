@@ -28,7 +28,7 @@
 				rate: 8
 			},
 			{
-				type: 'Google Maps - Android',
+				type: 'Google Maps Android',
 				rate: 6
 			},
 			{

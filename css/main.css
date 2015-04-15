@@ -201,9 +201,10 @@
 }
 
 #statements, #libraries, #frameworks {
-	min-width: 400px;
-	width: 80%;
+	min-width: 250px;
+	width: 60%;
 	margin: 25px auto;
+	padding: 0 15px;
 }
 
 #statements div, #libraries div, #frameworks div {
