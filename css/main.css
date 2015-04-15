@@ -203,7 +203,7 @@
 #statements, #libraries, #frameworks {
 	min-width: 400px;
 	width: 80%;
-	margin: 0 auto;
+	margin: 25px auto;
 }
 
 #statements div, #libraries div, #frameworks div {
