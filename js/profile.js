@@ -19,7 +19,7 @@
 			},
 			{
 				type: 'Angel List',
-				icon: 'img/profile/websites/angelist_icon.gif',
+				icon: 'img/profile/websites/angellist_icon.gif',
 				link: 'https://angel.co/alex-bu'
 			}
 		],
