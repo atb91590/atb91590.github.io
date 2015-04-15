@@ -22,7 +22,7 @@
 	</div>
 	<div class="subTitle">Languages</div>
 	<div id="languages">
-		<span class="label lang {{skill.getLanguageRate(lang.rate)}}" ng-repeat="lang in skill.getLanguages() | orderBy:'name'">
+		<span class="label lang" ng-class="skill.isNumeric(lang.rate)?skill.getLanguageRate(lang.rate):'label-primary'"ng-repeat="lang in skill.getLanguages(); | orderBy:'name'">
 			<div class="langName">{{lang.name}}</div>
 			<div class="langRate">{{lang.rate}}<span ng-if="skill.isNumeric(lang.rate);">/10</span></div>
 		</span>
