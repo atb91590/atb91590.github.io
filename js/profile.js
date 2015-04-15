@@ -11,6 +11,18 @@
 			month:9,
 			day:15
 		},
+		websites: [
+			{
+				type: 'LinkedIn',
+				icon: 'img/profile/websites/linkedin_icon.gif',
+				link: 'https://www.linkedin.com/pub/alex-bu/6b/67b/713'
+			},
+			{
+				type: 'Angel List',
+				icon: 'img/profile/websites/angelist_icon.gif',
+				link: 'https://angel.co/alex-bu'
+			}
+		],
 		contact:{
 			phone:'562-881-9291',
 			email:'atb91590@yahoo.com'
@@ -72,6 +84,9 @@
 		}
 		this.getObjective = function(){
 			return this.myself.misc.objective;
+		}
+		this.getWebsites = function(){
+			return this.myself.websites;
 		}
 	};
 })();

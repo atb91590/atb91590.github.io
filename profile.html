@@ -21,6 +21,13 @@
 		<a href="mailto:{{profile.getEmail()}}">
 			{{profile.getEmail()}}
 		</a><br>
+	<div id="websites">
+		<div class="siteContainer" ng-repeat="website in profile.getWebsites()">
+			<a href="{{website.link}}" title="{{website.type}}">
+				<img class="website" ng-src="{{website.icon}}"/>
+			</a>
+		</div>
+	</div>
 	<div id="objective">
 		<span class="glyphicon glyphicon-console" aria-hidden="true"></span>
 		<span class="boldIt">Objective:</span> 

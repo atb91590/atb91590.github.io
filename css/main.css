@@ -148,7 +148,7 @@
 
 #objective {
 	margin: 0 auto;
-	padding-top: 125px;
+	padding-top: 65px;
 	min-width: 300px;
 	width: 80%;
 }
@@ -163,6 +163,16 @@
 	font-size: 18px;
 	margin: 0px 0px;
 	padding: 0px 0px;
+}
+
+#websites {
+	width: 120px;
+	margin: 0 auto;
+}
+
+.siteContainer, .siteContainer a img {
+	width: 60px;
+	height: auto;
 }
 
 /*Skill Area -------------------------------------------------------------------------------------------------------*/
