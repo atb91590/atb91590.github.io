@@ -153,6 +153,10 @@
     -webkit-box-shadow: 0 0px 25px 0px #232323;
 }
 
+#profPic p {
+	top: 50%;
+}
+
 #myProfile {
 	padding-top: 175px;
 	text-align: center;
