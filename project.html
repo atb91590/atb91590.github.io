@@ -28,6 +28,9 @@
 			<a class="carousel-control left" href="#projCarousel" data-slide="prev"><p>&lsaquo;</p></a>
 			<a class="carousel-control right" href="#projCarousel" data-slide="next"><p>&rsaquo;</p></a>
 		</div>
+		<div id="projCredit" ng-if="proj.credit">
+			{{proj.credit}}
+		</div>
 		<div id="projDesc" class="well well-small" ng-class="{'overview': project.isDescTab('overview'), 'stack': project.isDescTab('stack')}">
 			<div class="btn-group">
 				<button class="btn" ng-class="{'active': project.isDescTab('overview')}" ng-click="project.setDescTab('overview');">Overview</button>

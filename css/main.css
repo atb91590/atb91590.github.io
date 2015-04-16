@@ -414,6 +414,10 @@
   background-color: #000;
 }
 
+#projCredit {
+	text-align: center;
+}
+
 #projDesc {
 	margin: 25px auto;
 	border: 3px outset lightgrey;

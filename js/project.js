@@ -20,7 +20,8 @@
 				'img/projects/corral/middle4.jpg',
 				'img/projects/corral/middle5.jpg',
 				'img/projects/corral/middle6.jpg'
-			]
+			],
+			credit:'Graphics created by Chris Ny'
 		},
 		{
 			title:'Bureau of Street Services Android App',
@@ -67,7 +68,8 @@
 				'img/projects/pizzaRushHour/middle1.png',
 				'img/projects/pizzaRushHour/middle2.png',
 				'img/projects/pizzaRushHour/middle3.png',
-			]
+			],
+			credit:'Conecpt by Sokha Ny'
 		},
 		{
 			title:'Various LA Intranet Web Apps',
