@@ -157,6 +157,9 @@
 	padding-top: 113px;
 	position: absolute;
 	z-index: 2;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 #myProfile {
