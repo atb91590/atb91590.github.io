@@ -41,11 +41,11 @@
 			<div id="stackContainer" class="clearfix" ng-if="project.isDescTab('stack');">
 				<div class="stackPart">
 					<span>Frontend</span>
-					<p ng-repeat="part in proj.stack.frontend">{{part}}</p>
+					<p ng-repeat="part in proj.stack.frontend | orderBy:'part'">{{part}}</p>
 				</div>
 				<div class="stackPart">
 					<span>Backend</span>
-					<p ng-repeat="part in proj.stack.backend">{{part}}</p>
+					<p ng-repeat="part in proj.stack.backend | orderBy:'part'">{{part}}</p>
 				</div>
 			</div>
 		</div>

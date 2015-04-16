@@ -6,8 +6,8 @@
 			type:'mobile',
 			purpose:'Senior Project',
 			stack:{
-				backend: ['PHP (Laravel)', 'mySQL'],
-				frontend: ['HTML', 'CSS', 'Javascript (AngularJS, IonicFramework, jQuery)']
+				backend: ['PHP (Laravel)', 'mySQL', 'Javascript', 'AngularJS', 'jQuery'],
+				frontend: ['HTML', 'CSS', 'IonicFramework']
 			},
 			description:'Information today is so easily accessible via the internet, but the people in your life are not. '+
 						'Corral solves this problem by giving you access to your friends at the tip of your fingers by '+
@@ -31,7 +31,7 @@
 			type:'mobile',
 			purpose:'Internship',
 			stack:{
-				backend: ['Microsoft SQL Server', 'Ruby (to extract/insert geospatial data)', 'Cold Fusion (web service)'],
+				backend: ['Java', 'Microsoft SQL Server', 'Ruby (extract geospatial data)', 'Cold Fusion (WSDL)'],
 				frontend: ['Java', 'Google Maps API', 'Mapquest']
 			},
 			description:'With concern for public knowledge, Mayor Eric Garcetti wanted city spending to be transparent and '+
@@ -47,10 +47,11 @@
 			type:'web',
 			purpose:'Nickelodeon Game+Hack',
 			stack:{
-				backend: ['N/A'],
+				backend: ['Microsoft Touch Develop'],
 				frontend: ['Microsoft Touch Develop']
 			},
-			description:'This game educates the player on proper recycling habits ranging from unsalvageable items to electronic waste.',
+			description:'This game educates the player on proper recycling habits by creating a reflex when encountering a type of trash. '+
+						'The waste ranges from unsalvageable items to electronic waste.',
 			images:[
 				'img/projects/planetRecycle/start.png',
 				'img/projects/planetRecycle/middle.png',
@@ -62,10 +63,11 @@
 			type:'web',
 			purpose:'Course Project',
 			stack:{
-				backend: ['N/A'],
+				backend: ['Microsoft Touch Develop'],
 				frontend: ['Microsoft Touch Develop']
 			},
-			description:'A simple 2D scroller game where the player must reach the finish line to deliver a pizza.',
+			description:'A simple 2D scroller game where the player must reach the finish line to deliver a pizza while dodging pedestrians'
+						+' and speeding vehicles.',
 			images:[
 				'img/projects/pizzaRushHour/start.png',
 				'img/projects/pizzaRushHour/middle1.png',
@@ -82,8 +84,8 @@
 			type:'web',
 			purpose:'Internship',
 			stack:{
-				backend: ['Microsoft SQL Server'],
-				frontend: ['Cold Fusion', 'HTML', 'CSS', 'Javascript', 'jQuery']
+				backend: ['Cold Fusion','Javascript', 'Microsoft SQL Server', 'jQuery'],
+				frontend: ['HTML', 'CSS']
 			},
 			description:'This entry covers a wide selection of applications which handle data-entry for city employees and equipment. '+
 						'Also, the programs provide reports and information references for auditors.',
