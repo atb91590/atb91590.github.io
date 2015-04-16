@@ -392,6 +392,9 @@
 	color: white;
 }
 
+#projCarousel .carousel-control {
+	top: 50%;
+}
 #projCredit {
 	text-align: center;
 	font-weight: bold;
