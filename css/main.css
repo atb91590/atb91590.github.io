@@ -153,8 +153,8 @@
     -webkit-box-shadow: 0 0px 25px 0px #232323;
 }
 
-#profPic span {
-	margin-top: 125px;
+#profPicText {
+	padding-top: 125px;
 }
 
 #myProfile {
