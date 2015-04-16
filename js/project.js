@@ -10,8 +10,8 @@
 				frontend: ['HTML', 'CSS', 'Javascript (AngularJS, IonicFramework, jQuery)']
 			},
 			description:'Information today is so easily accessible via the internet, but the people in your life are not. '+
-						'Corral solves this problem by giving you access to your friends at the tip of your finger tips by '+
-						'only informing you who is available at a specified time (while maintaining user privacy)',
+						'Corral solves this problem by giving you access to your friends at the tip of your fingers by '+
+						'only informing you who is available at a user specified time (while maintaining user privacy)',
 			images:[
 				'img/projects/corral/start.jpg',
 				'img/projects/corral/middle1.jpg',
