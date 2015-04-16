@@ -82,6 +82,10 @@
 			{
 				type: 'MS Powerpoint',
 				rate: 8
+			},
+			{
+				type: 'Chrome Dev Tools',
+				rate: 8
 			}
 		],
 		languages:[
