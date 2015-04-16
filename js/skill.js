@@ -6,10 +6,6 @@
 				rate: 6
 			},
 			{
-				type: 'GIT',
-				rate: 8
-			},
-			{
 				type: 'Team Cooperation',
 				rate: 8
 			},
@@ -54,6 +50,28 @@
 				rate: 7
 			}
 		],
+		tools:[
+			{
+				type: 'Photoshop',
+				rate: 8
+			},
+			{
+				type: 'GIT',
+				rate: 8
+			},
+			{
+				type: 'Illustrator',
+				rate: 4
+			},
+			{
+				type: 'Sublime Text',
+				rate: 8
+			},
+			{
+				type: 'Eclipse',
+				rate: 8
+			}
+		],
 		languages:[
 			{name:'Java', 			rate:8},
 			{name:'C/C++', 			rate:5},
@@ -94,6 +112,9 @@
 		}
 		this.getLanguages = function(){
 			return this.skills.languages;
+		}
+		this.getTools = function(){
+			return this.skills.tools;
 		}
 		this.getLanguageRate = function(rate){
 			if (!numCheck(rate))

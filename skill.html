@@ -25,6 +25,13 @@
 			{{framework.type}}
 		</div>
 	</div>
+	<div class="subTitle">Tools</div>
+	<div id="tools" class="clearfix">
+		<div ng-repeat="tool in skill.getTools();">
+			<span class="badge {{skill.getSkillRate(tool.rate)}}">&nbsp;</span>
+			{{tool.type}}
+		</div>
+	</div>
 	<div class="subTitle">Languages</div>
 	<div id="languages">
 		<span class="label lang {{skill.getLanguageRate(lang.rate)}}" ng-repeat="lang in skill.getLanguages() | orderBy:'name'">
