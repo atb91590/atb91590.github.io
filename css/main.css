@@ -155,6 +155,8 @@
 
 #profPicText {
 	padding-top: 125px;
+	position: absolute;
+	z-index: 2;
 }
 
 #myProfile {
