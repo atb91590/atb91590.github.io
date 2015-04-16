@@ -21,7 +21,8 @@
 			<!-- Carousel items -->
 			<div class="carousel-inner">
 				<div class="item" ng-repeat="image in proj.images" ng-class="{'active':$index==0}">
-					<img class="jobLogo" ng-src="{{image}}"/>
+					<img class="projImg" ng-src="{{image}}" load-spinner/>
+					<img class="spinner" ng-src="{{main.spinner}}"/>
 				</div>
 			</div>
 			<!-- Carousel nav -->

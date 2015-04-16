@@ -6,7 +6,10 @@
 		author: "Alex Bu"
 	}
 
+	var spinnerImage = 'img/spinner.gif';
+
 	app.controller('MainController', function($scope, $location, anchorSmoothScroll){
+		this.spinner = spinnerImage;
 		this.metaTags = metaItems;
 		this.getMetaDescription = function(){
 			return this.metaTags.description;
@@ -65,6 +68,22 @@
                 $('#alert').alert('close');
             });
 	    }
+	})
+	.direcetive('loadSpinner',function(){
+		return {
+			restrict: 'A',
+			link: function(scope, element){
+				element.on('load',function(){
+					element.removeClass('isLoading');
+					element.addClass('isLoaded');
+					element.parent().find('.spinner').remove();
+
+				});
+				scope.$watch('ngSrc',function(){
+					element.addClass('isLoading');
+				});
+			}
+		};
 	})
 	.service('anchorSmoothScroll', function(){
 	    this.scrollTo = function(eID) {
