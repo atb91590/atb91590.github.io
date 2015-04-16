@@ -384,34 +384,12 @@
 }
 
 #projCarousel .carousel-control {
-	height: 100%;
 	width: 50px;
 	font-size: 36px;
-	border-radius: 5px;
 }
 
 #projCarousel .carousel-control p {
 	color: white;
-}
-
-#projCarousel.mobile .carousel-control p {
-	margin-top: 300%;
-}
-
-#projCarousel.mobile .carousel-indicators {
-	top: 353px;
-}
-
-#projCarousel.web .carousel-control p {
-	margin-top: 400%;
-}
-
-#projCarousel .carousel-indicators li {
-  	border: 1px solid #000;
-}
-
-#projCarousel .carousel-indicators .active {
-  background-color: #000;
 }
 
 #projCredit {
