@@ -399,7 +399,7 @@
 	width: 225px;
 }
 
-#projCarousel.web{
+#projCarousel.web, #projCarousel.web .item, #projCarousel.web .item .projImg{
 	min-width: 300px;
 	max-width: 650px;
 	width: 80%;
