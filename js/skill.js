@@ -70,6 +70,18 @@
 			{
 				type: 'Eclipse',
 				rate: 8
+			},
+			{
+				type: 'MS Excel',
+				rate: 8
+			},
+			{
+				type: 'MS Word',
+				rate: 9
+			},
+			{
+				type: 'MS Powerpoint',
+				rate: 8
 			}
 		],
 		languages:[
