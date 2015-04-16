@@ -240,14 +240,14 @@
 	text-align: center;
 }
 
-#statements, #libraries, #frameworks {
+#statements, #libraries, #frameworks, #tools {
 	min-width: 300px;
 	width: 70%;
 	margin: 25px auto;
 	padding: 0 15px;
 }
 
-#statements div, #libraries div, #frameworks div {
+#statements div, #libraries div, #frameworks div, #tools div {
 	width: 150px;
 	float: left;
 }
