@@ -21,7 +21,10 @@
 				'img/projects/corral/middle5.jpg',
 				'img/projects/corral/middle6.jpg'
 			],
-			credit:'Graphics created by Chris Ny'
+			credit: {
+				text: 'Graphics created by Chrisonna Ny',
+				link: 'http://sleepynoodledoodles.deviantart.com/'
+			}
 		},
 		{
 			title:'Bureau of Street Services Android App',
@@ -69,7 +72,10 @@
 				'img/projects/pizzaRushHour/middle2.png',
 				'img/projects/pizzaRushHour/middle3.png',
 			],
-			credit:'Conecpt by Sokha Ny'
+			credit: {
+				text: 'Conecpt by Sokha Ny',
+				link: 'https://www.linkedin.com/pub/sokha-ny/70/863/354'
+			}
 		},
 		{
 			title:'Various LA Intranet Web Apps',

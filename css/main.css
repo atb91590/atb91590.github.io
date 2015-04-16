@@ -388,6 +388,14 @@
 	color: white;
 }
 
+.carousel-control .glyphicon-arrow-left, 
+.carousel-control .glyphicon-arrow-right {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+}
+
 #projCarousel.mobile .carousel-indicators {
 	top: 353px;
 }
