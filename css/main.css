@@ -399,11 +399,16 @@
 	width: 225px;
 }
 
-#projCarousel.web, #projCarousel.web .item, #projCarousel.web .item .projImg{
+#projCarousel.web{
 	min-width: 300px;
 	max-width: 650px;
 	width: 80%;
 } 
+
+#projCarousel.web .item, #projCarousel.web .item .projImg {
+	width: 100%;
+	height: auto;
+}
 
 #projCarousel .item .projImg{
 	height: auto;
