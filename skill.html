@@ -28,7 +28,7 @@
 	<div class="subTitle">Tools</div>
 	<div id="tools" class="clearfix">
 		<div ng-repeat="tool in skill.getTools() | orderBy:'type'">
-			<span class="badge {{skill.getSkillRate(tool.rate)}}">{{tool.rate}}</span>
+			<span class="badge {{skill.getSkillRate(tool.rate)}}">&nbsp;</span>
 			{{tool.type}}
 		</div>
 	</div>
