@@ -69,7 +69,7 @@
             });
 	    }
 	})
-	.direcetive('loadSpinner',function(){
+	.directive('loadSpinner',function(){
 		return {
 			restrict: 'A',
 			link: function(scope, element){
