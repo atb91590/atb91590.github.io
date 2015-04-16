@@ -384,12 +384,23 @@
 }
 
 #projCarousel .carousel-control {
-	width: 50px;
 	font-size: 36px;
 }
 
 #projCarousel .carousel-control p {
 	color: white;
+}
+
+#projCarousel.mobile .carousel-indicators {
+	top: 353px;
+}
+
+#projCarousel .carousel-indicators li {
+  	border: 1px solid #000;
+}
+
+#projCarousel .carousel-indicators .active {
+  background-color: #000;
 }
 
 #projCredit {
