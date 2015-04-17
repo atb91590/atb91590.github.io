@@ -11,7 +11,7 @@
 			},
 			{
 				type: 'Bayesian Probability',
-				rate: 6
+				rate: 5
 			},
 			{
 				type: 'NP-Complete',
