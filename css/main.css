@@ -1,13 +1,19 @@
 /* Create font used for headers ---------------------------------------------------------------------------------*/
 @font-face {
+    font-family: OpenSansBold;
+    src: url(../lib/fonts/OpenSansBold-Bold.ttf);
+}
+
+@font-face {
     font-family: OpenSans;
-    src: url(../lib/fonts/OpenSans-Bold.ttf);
+    src: url(../lib/fonts/OpenSansBold-Regular.ttf);
 }
 
 /*Simple Reset --------------------------------------------------------------------------------------------------*/
 * {
 	margin: 0px;
 	padding: 0px;
+	font-family: OpenSans;
 }
 
 /* Misc CSS -----------------------------------------------------------------------------------------------------*/
@@ -22,12 +28,12 @@
 
 #copyright p {
 	display: inline-block;
-	font-family: OpenSans;
+	font-family: OpenSansBold;
 	font-size: 20px;
 }
 
 .sectionTitle {
-	font-family: OpenSans;
+	font-family: OpenSansBold;
 	text-align: center;
 	font-size: 28px;
 	padding: 25px 25px;
@@ -40,7 +46,7 @@
 }
 
 .subTitle {
-	font-family: OpenSans;
+	font-family: OpenSansBold;
 	font-size: 24px;
 	margin: 0 auto;
 	font-weight: bold;
@@ -109,7 +115,7 @@
 
 /* Menubar -------------------------------------------------------------------------------------------------------*/
 .navbar {
-	font-family: OpenSans;
+	font-family: OpenSansBold;
 	font-size: 16px;
     box-shadow: 0 4px 10px -2px #232323;
     -moz-box-shadow: 0 4px 10px -2px #232323;
@@ -195,7 +201,7 @@
 }
 
 #name {
-	font-family: OpenSans;
+	font-family: OpenSansBold;
 	font-size: 32px;
 	text-decoration: none;
 }
