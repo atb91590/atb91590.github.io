@@ -19,7 +19,11 @@
 				'img/projects/corral/middle3.jpg',
 				'img/projects/corral/middle4.jpg',
 				'img/projects/corral/middle5.jpg',
-				'img/projects/corral/middle6.jpg'
+				'img/projects/corral/middle6.jpg',
+				'img/projects/corral/middle7.jpg',
+				'img/projects/corral/middle8.jpg',
+				'img/projects/corral/middle9.jpg',
+				'img/projects/corral/middle10.jpg'
 			],
 			credit: {
 				text: 'Graphics created by Chrisonna Ny',
