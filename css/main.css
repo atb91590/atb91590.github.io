@@ -1,7 +1,7 @@
 /* Create font used for headers ---------------------------------------------------------------------------------*/
 @font-face {
-    font-family: HighTower;
-    src: url(../lib/fonts/HTOWERT.TTF);
+    font-family: OpenSans;
+    src: url(../lib/fonts/OpenSans-Bold.ttf);
 }
 
 /*Simple Reset --------------------------------------------------------------------------------------------------*/
@@ -22,12 +22,12 @@
 
 #copyright p {
 	display: inline-block;
-	font-family: HighTower;
+	font-family: OpenSans;
 	font-size: 20px;
 }
 
 .sectionTitle {
-	font-family: HighTower;
+	font-family: OpenSans;
 	text-align: center;
 	font-size: 28px;
 	padding: 25px 25px;
@@ -40,7 +40,7 @@
 }
 
 .subTitle {
-	font-family: HighTower;
+	font-family: OpenSans;
 	font-size: 24px;
 	margin: 0 auto;
 	font-weight: bold;
@@ -109,7 +109,7 @@
 
 /* Menubar -------------------------------------------------------------------------------------------------------*/
 .navbar {
-	font-family: HighTower;
+	font-family: OpenSans;
 	font-size: 16px;
     box-shadow: 0 4px 10px -2px #232323;
     -moz-box-shadow: 0 4px 10px -2px #232323;
@@ -195,7 +195,7 @@
 }
 
 #name {
-	font-family: HighTower;
+	font-family: OpenSans;
 	font-size: 32px;
 	text-decoration: none;
 }
