@@ -1,12 +1,12 @@
 /* Create font used for headers ---------------------------------------------------------------------------------*/
 @font-face {
     font-family: OpenSansBold;
-    src: url(../lib/fonts/OpenSansBold-Bold.ttf);
+    src: url(../lib/fonts/OpenSans-Bold.ttf);
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url(../lib/fonts/OpenSansBold-Regular.ttf);
+    src: url(../lib/fonts/OpenSans-Regular.ttf);
 }
 
 /*Simple Reset --------------------------------------------------------------------------------------------------*/
