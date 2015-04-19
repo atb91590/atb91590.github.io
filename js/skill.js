@@ -132,6 +132,10 @@
 	var skillController = function(){
 		this.skills = mySkills;
 		this.isNumeric = numCheck;
+		this.sortBy = 'type';
+		this.getSortBy = function(){
+			return this.sortBy;
+		}
 		this.getGeneral = function(){
 			return this.skills.general;
 		}
