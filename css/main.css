@@ -251,6 +251,7 @@
 	border: 1px solid lightgrey;
 	width: 150px;
 	margin: 0 auto;
+	text-align: center;
 }
 
 #statements, #libraries, #databases, #frameworks, #tools {
