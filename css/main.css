@@ -423,6 +423,7 @@
 
 #projCarousel.mobile .carousel-indicators {
 	top: 353px;
+	width: 300px;
 }
 
 #projCarousel .carousel-indicators li {
