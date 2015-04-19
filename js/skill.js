@@ -103,18 +103,18 @@
 			}
 		],
 		languages:[
-			{name:'Java', 			rate:8},
-			{name:'C/C++', 			rate:5},
-			{name:'HTML', 			rate:8},
-			{name:'CSS', 			rate:8},
-			{name:'Javascript', 	rate:7},
-			{name:'Cold Fusion', 	rate:8},
-			{name:'SQL', 			rate:8},
-			{name:'Objective-C', 	rate:'Exposed'},
-			{name:'Python', 		rate:'Beginner'},
-			{name:'Ruby', 			rate:'Exposed'},
-			{name:'MatLab', 		rate:5},
-			{name:'PHP',			rate:4}
+			{type:'Java', 			rate:8},
+			{type:'C/C++', 			rate:5},
+			{type:'HTML', 			rate:8},
+			{type:'CSS', 			rate:8},
+			{type:'Javascript', 	rate:7},
+			{type:'Cold Fusion', 	rate:8},
+			{type:'SQL', 			rate:8},
+			{type:'Objective-C', 	rate:'Exposed'},
+			{type:'Python', 		rate:'Beginner'},
+			{type:'Ruby', 			rate:'Exposed'},
+			{type:'MatLab', 		rate:5},
+			{type:'PHP',			rate:4}
 		]
 	};
 
@@ -135,6 +135,9 @@
 		this.sortBy = 'type';
 		this.getSortBy = function(){
 			return this.sortBy;
+		}
+		this.setSortBy = function(sort){
+			this.sortBy = sort;
 		}
 		this.getGeneral = function(){
 			return this.skills.general;
