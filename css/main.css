@@ -249,9 +249,12 @@
 #sorter {
 	border-radius: 5px;
 	border: 1px solid lightgrey;
-	width: 150px;
 	margin: 0 auto;
 	text-align: center;
+}
+
+#sorter, #sorter div, #sorter div a {
+	width: 285px;
 }
 
 #statements, #libraries, #databases, #frameworks, #tools {
