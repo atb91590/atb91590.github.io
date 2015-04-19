@@ -113,7 +113,8 @@
 			{name:'Objective-C', 	rate:'Exposed'},
 			{name:'Python', 		rate:'Beginner'},
 			{name:'Ruby', 			rate:'Exposed'},
-			{name:'MatLab', 		rate:5}
+			{name:'MatLab', 		rate:5},
+			{name:'PHP',			rate:4}
 		]
 	};
 
