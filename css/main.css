@@ -247,11 +247,13 @@
 }
 
 #sorter {
-	width: 150px;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid lightgrey;
+}
+#sorter a {
 	margin: 0 auto;
+	width: 150px;
 }
 
 #statements, #libraries, #databases, #frameworks, #tools {
