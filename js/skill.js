@@ -134,7 +134,7 @@
 		this.isNumeric = numCheck;
 		this.sortBy = {text:'Type', val:'type'};
 		this.getSortBy = function(){
-			return this.sortBy.val;
+			return this.sortBy;
 		}
 		this.setSortBy = function(sort){
 			this.sortBy = sort;

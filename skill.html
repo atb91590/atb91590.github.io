@@ -8,7 +8,7 @@
 	<div id="sorter" class="clearfix">
 		<div class="btn-group">
 			<a class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
-				Order by: {{skill.getSortBy()}}
+				Order by: {{skill.getSortBy().text}}
 				<span class="caret"></span>
 			</a>
 			<ul class="dropdown-menu">
@@ -22,42 +22,42 @@
 		</div>
 	</div>
 	<div id="statements" class="clearfix">
-		<div ng-repeat="gen in skill.getGeneral() | orderBy:skill.getSortBy()">
+		<div ng-repeat="gen in skill.getGeneral() | orderBy:skill.getSortBy().val">
 			<span class="badge {{skill.getSkillRate(gen.rate)}}">&nbsp;</span>
 			{{gen.type}}
 		</div>
 	</div>
 	<div class="subTitle">Libraries</div>
 	<div id="libraries" class="clearfix">
-		<div ng-repeat="library in skill.getLibraries() | orderBy:skill.getSortBy()">
+		<div ng-repeat="library in skill.getLibraries() | orderBy:skill.getSortBy().val">
 			<span class="badge {{skill.getSkillRate(library.rate)}}">&nbsp;</span>
 			{{library.type}}
 		</div>
 	</div>
 	<div class="subTitle">Databases</div>
 	<div id="databases" class="clearfix">
-		<div ng-repeat="database in skill.getDatabases() | orderBy:skill.getSortBy()">
+		<div ng-repeat="database in skill.getDatabases() | orderBy:skill.getSortBy().val">
 			<span class="badge {{skill.getSkillRate(database.rate)}}">&nbsp;</span>
 			{{database.type}}
 		</div>
 	</div>
 	<div class="subTitle">Frameworks</div>
 	<div id="frameworks" class="clearfix">
-		<div ng-repeat="framework in skill.getFrameworks() | orderBy:skill.getSortBy()">
+		<div ng-repeat="framework in skill.getFrameworks() | orderBy:skill.getSortBy().val">
 			<span class="badge {{skill.getSkillRate(framework.rate)}}">&nbsp;</span>
 			{{framework.type}}
 		</div>
 	</div>
 	<div class="subTitle">Tools</div>
 	<div id="tools" class="clearfix">
-		<div ng-repeat="tool in skill.getTools() | orderBy:skill.getSortBy()">
+		<div ng-repeat="tool in skill.getTools() | orderBy:skill.getSortBy().val">
 			<span class="badge {{skill.getSkillRate(tool.rate)}}">&nbsp;</span>
 			{{tool.type}}
 		</div>
 	</div>
 	<div class="subTitle">Languages</div>
 	<div id="languages">
-		<span class="label lang {{skill.getLanguageRate(lang.rate)}}" ng-repeat="lang in skill.getLanguages() | orderBy:skill.getSortBy()">
+		<span class="label lang {{skill.getLanguageRate(lang.rate)}}" ng-repeat="lang in skill.getLanguages() | orderBy:skill.getSortBy().val">
 			<div class="langName">{{lang.type}}</div>
 			<div class="langRate">{{lang.rate}}<span ng-if="skill.isNumeric(lang.rate);">/10</span></div>
 		</span>
