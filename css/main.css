@@ -257,6 +257,10 @@
 	width: 285px;
 }
 
+#sorter div ul li {
+	text-align: center;
+}
+
 #statements, #libraries, #databases, #frameworks, #tools {
 	min-width: 300px;
 	width: 78%;
