@@ -249,8 +249,8 @@
 #sorter {
 	border-radius: 5px;
 	border: 1px solid lightgrey;
-	margin: 0 auto;
 	width: 150px;
+	margin: 0 auto;
 }
 
 #statements, #libraries, #databases, #frameworks, #tools {
