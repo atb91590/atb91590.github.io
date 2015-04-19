@@ -423,8 +423,6 @@
 
 #projCarousel.mobile .carousel-indicators {
 	top: 353px;
-	white-space: nowrap;
-	width: auto;
 }
 
 #projCarousel .carousel-indicators li {

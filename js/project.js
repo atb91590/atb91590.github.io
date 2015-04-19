@@ -34,7 +34,7 @@
 			}
 		},
 		{
-			title:'Bureau of Street Services Android App',
+			title:'LABSS Android App',
 			type:'mobile',
 			purpose:'Internship',
 			stack:{
