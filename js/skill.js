@@ -63,7 +63,7 @@
 				type: 'MS SQL Server',
 				rate: 6
 			}
-		]
+		],
 		tools:[
 			{
 				type: 'Photoshop',
