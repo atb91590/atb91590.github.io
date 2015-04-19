@@ -247,6 +247,7 @@
 }
 
 #sorter {
+	width: 150px;
 	text-align: center;
 	border-radius: 5px;
 	border: 1px solid lightgrey;
