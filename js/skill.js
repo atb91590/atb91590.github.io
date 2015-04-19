@@ -132,9 +132,9 @@
 	var skillController = function(){
 		this.skills = mySkills;
 		this.isNumeric = numCheck;
-		this.sortBy = 'type';
+		this.sortBy = {text:'Type', val:'type'};
 		this.getSortBy = function(){
-			return this.sortBy;
+			return this.sortBy.val;
 		}
 		this.setSortBy = function(sort){
 			this.sortBy = sort;
