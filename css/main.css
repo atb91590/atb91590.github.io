@@ -424,8 +424,7 @@
 #projCarousel.mobile .carousel-indicators {
 	top: 353px;
 	white-space: nowrap;
-	padding-left: 0px;
-	padding-right: 0px;
+	width: auto;
 }
 
 #projCarousel .carousel-indicators li {
