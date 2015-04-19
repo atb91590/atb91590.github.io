@@ -246,14 +246,14 @@
 	text-align: center;
 }
 
-#statements, #libraries, #frameworks, #tools {
+#statements, #libraries, #databases, #frameworks, #tools {
 	min-width: 300px;
 	width: 78%;
 	margin: 25px auto;
 	padding: 0 15px;
 }
 
-#statements div, #libraries div, #frameworks div, #tools div {
+#statements div, #libraries div, #databases div, #frameworks div, #tools div {
 	width: 150px;
 	float: left;
 }

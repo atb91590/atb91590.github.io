@@ -50,6 +50,20 @@
 				rate: 7
 			}
 		],
+		databases:[
+			{
+				type: 'NodeJS',
+				rate: 4
+			},
+			{
+				type: 'mySQL',
+				rate: 4
+			},
+			{
+				type: 'MS SQL Server',
+				rate: 6
+			}
+		]
 		tools:[
 			{
 				type: 'Photoshop',
@@ -122,6 +136,9 @@
 		}
 		this.getLibraries = function(){
 			return this.skills.libraries;
+		}
+		this.getDatabases = function(){
+			return this.skills.databases;
 		}
 		this.getFrameworks = function(){
 			return this.skills.frameworks;

@@ -18,6 +18,12 @@
 			{{library.type}}
 		</div>
 	</div>
+	<div id="databases" class="clearfix">
+		<div ng-repeat="database in skill.getDatabases() | orderBy:'type'">
+			<span class="badge {{skill.getSkillRate(database.rate)}}">&nbsp;</span>
+			{{database.type}}
+		</div>
+	</div>
 	<div class="subTitle">Frameworks</div>
 	<div id="frameworks" class="clearfix">
 		<div ng-repeat="framework in skill.getFrameworks() | orderBy:'type'">
