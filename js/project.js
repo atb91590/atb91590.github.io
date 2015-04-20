@@ -132,9 +132,5 @@
 		this.isWeb = function(project){
 			return project.type=='web';
 		}
-		$('.projSlick').slick({
-			autoplay: true,
-			autoplaySpeed: 2000
-		});
 	}
 })();
