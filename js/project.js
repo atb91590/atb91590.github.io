@@ -110,6 +110,21 @@
 			controller: projectController,
 			controllerAs: 'project'
 		};
+	})
+	.directive("slickRefresh",function(){
+		return {
+			restrict: 'A',
+			link: function(scope, element){
+				element.on('load',function(){
+					$('.projSlick').slick({
+					  slidesToScroll: 1,
+					  autoplay: true,
+					  autoplaySpeed: 4000,
+					  dots: true
+				  });
+				});
+			}
+		};
 	});
 
 	var projectController = function(){
