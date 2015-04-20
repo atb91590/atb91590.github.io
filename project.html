@@ -49,14 +49,6 @@
 			</div><br><br>
 			<p ng-if="project.isDescTab('overview');">
 				{{proj.description}}
-				<div id="projDocContainer">
-					Download:<br>
-					<div ng-repeat="doc in proj.documents">
-						<form method="get" action="{{doc.path}}">
-							<button class="btn btn-success" type="submit">{{doc.title}}</button>
-						</form>
-					</div>
-				</div>
 			</p>
 			<div id="stackContainer" class="clearfix" ng-if="project.isDescTab('stack');">
 				<div class="stackPart">
@@ -66,6 +58,14 @@
 				<div class="stackPart">
 					<span>Backend</span>
 					<p ng-repeat="part in proj.stack.backend | orderBy:'part'">{{part}}</p>
+				</div>
+			</div>
+			<div id="projDocContainer">
+				<span id="dlTitle">Download</span>
+				<div ng-repeat="doc in proj.documents">
+					<form method="get" action="{{doc.path}}">
+						<button class="btn btn-success" type="submit">{{doc.title}}</button>
+					</form>
 				</div>
 			</div>
 		</div>
