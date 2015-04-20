@@ -106,20 +106,20 @@
 	        if (distance < 100) {
 	            scrollTo(0, stopY); return;
 	        }
-	        var speed = Math.round(distance / 10);
+	        var speed = Math.round(distance / 100);
 	        if (speed >= 20) speed = 20;
 	        var step = Math.round(distance / 100);
 	        var leapY = stopY > startY ? startY + step : startY - step;
 	        var timer = 0;
 	        if (stopY > startY) 
-	            for (var i=startY; i<stopY; i+=step, step*=1.2, speed*=.8) {
+	            for (var i=startY; i<stopY; i+=step, step*=1.2) {
 	                setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
 	                leapY += step; 
 	                if (leapY > stopY) 
 	                	leapY = stopY; timer++;
 	            }
 	        else
-	        	for (var i=startY; i>stopY; i-=step, step*=1.2, speed*=.8) {
+	        	for (var i=startY; i>stopY; i-=step, step*=1.2) {
 		            setTimeout("window.scrollTo(0, "+leapY+")", timer * speed);
 		            leapY -= step; 
 		            if (leapY < stopY) 
