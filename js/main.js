@@ -17,8 +17,8 @@
 		this.getMetaAuthor = function(){
 			return this.metaTags.author;
 		}
-		// Start: Activate Draggable Content------------------------------------------------
-		interact('.draggable').draggable({
+		// Start: Activate Draggable Profile Pic------------------------------------------------
+		interact('#profPic').draggable({
 		    inertia: true,
 		    restrict: {
 		      restriction: "parent",
@@ -41,7 +41,7 @@
 		                     event.dy * event.dy)|0) + 'px');
 		    }
 		});
-		// End: Activate Draggable Content------------------------------------------------
+		// End: Activate Draggable Profile Pic------------------------------------------------
 
 	    // Hash Function used to generate unique ids for DOM elements
 	    this.hashString = function(str) {
