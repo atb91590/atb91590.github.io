@@ -118,8 +118,7 @@
 				element.on('load',function(){
 					$('.projSlick').slick({
 					  slidesToScroll: 1,
-					  autoplay: true,
-					  autoplaySpeed: 5000,
+					  autoplay: false,
 					  dots: false
 				  });
 				});
