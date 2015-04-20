@@ -7,16 +7,16 @@
 	</div>
 	<div id="sorter" class="clearfix">
 		<div class="btn-group">
-			<a class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+			<a class="btn btn-mini dropdown-toggle" ng-click="main.toggleDropMenu('sortMenu');" data-toggle="dropdown">
 				Order by: {{skill.getSortBy().text}}
 				<span class="caret"></span>
 			</a>
-			<ul class="dropdown-menu">
+			<ul id="sortMenu" class="dropdown-menu">
 				<li>
-					<a ng-click="skill.setSortBy({text:'Type',val:'type'})">Type</a>
+					<a ng-click="skill.setSortBy({text:'Type',val:'type'}); main.toggleDropMenu('sortMenu');">Type</a>
 				</li>
 				<li>
-					<a ng-click="skill.setSortBy({text:'Rate',val:'-rate'})">Rate</a>
+					<a ng-click="skill.setSortBy({text:'Rate',val:'-rate'}); main.toggleDropMenu('sortMenu');">Rate</a>
 				</li>
 			</ul>
 		</div>

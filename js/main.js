@@ -68,6 +68,19 @@
                 $('#alert').alert('close');
             });
 	    }
+	    this.toggleDropMenu = function(id){
+			var menu = $('#'+id);
+	    	if (menu.is(':visible')){
+		    	menu.fadeTo(1, 0.5).slideUp(200, function () {
+	                menu.hide();
+	            });
+	    	}
+	    	else {
+	    		menu.slideDown(200).fadeTo(1, 1, function(){
+	    			menu.show();
+	    		});
+	    	}
+		}
 	})
 	.directive('loadSpinner',function(){
 		return {
