@@ -125,7 +125,7 @@
 		            if (leapY < stopY) 
 		            	leapY = stopY; timer++;
 		        }
-			setTimeout("window.scrollTo("+stopY+")", timer * speed);
+			setTimeout("window.scrollTo(0, "+stopY+")", timer * speed);
 	        
 	        function currentYPosition() {
 	            // Firefox, Chrome, Opera, Safari
