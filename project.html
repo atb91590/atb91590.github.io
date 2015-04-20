@@ -18,7 +18,7 @@
 	  	<!-- New Carousel -->
 	  	<div id="projCarousel" class="projSlick" ng-class="{'mobile': project.isMobile(proj), 'web': project.isWeb(proj)}">
 	  		<div class="item" ng-repeat="image in proj.images">
-				<img class="spinner" ng-src="{{main.spinner}}"/>
+				<img class="spinner" ng-src="{{main.spinner}}" slick-refresh/>
 	  			<img class="projImg" ng-src="{{image}}" load-spinner slick-refresh/>
 	  		</div>
 	  	</div>
