@@ -233,7 +233,7 @@
 }
 
 #rateLegend {
-	width: 285px;
+	width: 300px;
 	margin: 0 auto;
 	border: 1px solid lightgrey;
 	border-top-left-radius: 5px;
@@ -241,7 +241,7 @@
 }
 
 .rateKey {
-	width: 85px;
+	width: 90px;
 	float: left;
 	padding: 5px;
 	text-align: center;
@@ -253,7 +253,7 @@
 	border: 1px solid lightgrey;
 	margin: 0 auto;
 	border-top: none;
-	width: 285px;
+	width: 300px;
 }
 
 #statements, #libraries, #databases, #frameworks, #tools {
