@@ -108,7 +108,7 @@
 	        }
 	        var speed = Math.round(distance / 100);
 	        if (speed >= 20) speed = 20;
-	        var step = Math.round(distance / 100);
+	        var step = Math.round(distance / 50);
 	        var leapY = stopY > startY ? startY + step : startY - step;
 	        var timer = 0;
 	        if (stopY > startY) {
