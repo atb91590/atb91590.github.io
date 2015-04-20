@@ -133,11 +133,4 @@
 			return project.type=='web';
 		}
 	}
-
-	$(document).ready(function(){
-	  $('.projSlick').slick({
-		  autoplay: true,
-		  autoplaySpeed: 2000
-	  });
-	});
 })();
