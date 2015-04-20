@@ -13,6 +13,7 @@
 						'Corral solves this problem by giving you access to your friends at the tip of your fingers by '+
 						'only informing you who is available at a user specified time (while maintaining user privacy)',
 			images:[
+				'img/projects/corral/logo.jpg',
 				'img/projects/corral/start.jpg',
 				'img/projects/corral/middle1.jpg',
 				'img/projects/corral/middle2.jpg',
