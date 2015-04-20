@@ -252,21 +252,8 @@
 	border-bottom-right-radius: 5px;
 	border: 1px solid lightgrey;
 	margin: 0 auto;
-	text-align: center;
 	border-top: none;
-}
-
-#sorter, #sorter div, #sorter div a {
 	width: 285px;
-}
-
-#sorter div a {
-	padding: 5px 0;
-}
-
-#sorter div ul li {
-	text-align: center;
-	padding: 5px 0;
 }
 
 #statements, #libraries, #databases, #frameworks, #tools {

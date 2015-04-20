@@ -6,17 +6,17 @@
 		<div class="rateKey"><span class="badge high">&nbsp;</span> Great</div>
 	</div>
 	<div id="sorter" class="clearfix">
-		<div class="btn-group">
-			<a class="btn btn-mini dropdown-toggle" ng-click="main.toggleDropMenu('sortMenu');" data-toggle="dropdown">
+		<div class="dropdownArea btn-group">
+			<a class="btn btn-mini dropdown-toggle dropdownArea" ng-click="main.toggleDropMenu('sortMenu');" data-toggle="dropdown">
 				Order by: {{skill.getSortBy().text}}
 				<span class="caret"></span>
 			</a>
 			<ul id="sortMenu" class="dropdown-menu">
-				<li>
-					<a ng-click="skill.setSortBy({text:'Type',val:'type'}); main.toggleDropMenu('sortMenu');">Type</a>
+				<li class="dropItem" ng-click="skill.setSortBy({text:'Type',val:'type'}); main.toggleDropMenu('sortMenu');">
+					<a>Type</a>
 				</li>
-				<li>
-					<a ng-click="skill.setSortBy({text:'Rate',val:'-rate'}); main.toggleDropMenu('sortMenu');">Rate</a>
+				<li class="dropItem" ng-click="skill.setSortBy({text:'Rate',val:'-rate'}); main.toggleDropMenu('sortMenu');">
+					<a>Rate</a>
 				</li>
 			</ul>
 		</div>
