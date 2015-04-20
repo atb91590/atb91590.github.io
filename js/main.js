@@ -108,7 +108,7 @@
 	        }
 	        var speed = Math.round(distance / 100);
 	        if (speed >= 20) speed = 20;
-	        var step = Math.round(distance / 100);
+	        var step = Math.round(distance / 1000);
 	        var leapY = stopY > startY ? startY + step : startY - step;
 	        var timer = 0;
 	        if (stopY > startY) 
@@ -125,6 +125,7 @@
 		            if (leapY < stopY) 
 		            	leapY = stopY; timer++;
 		        }
+			setTimeout("window.scrollTo("+stopY+")", timer * speed);
 	        
 	        function currentYPosition() {
 	            // Firefox, Chrome, Opera, Safari
