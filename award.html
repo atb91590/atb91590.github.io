@@ -2,7 +2,7 @@
 	<div class="sectionTitle">Awards</div>
 	<div id="awardList">
 	  	<div ng-repeat="cert in award.awards">
-	        <a id="award{{main.hashString(cert.period)}}" href="#award{{main.hashString(cert.period)}}" class="awardPops" data-trigger="hover click" data-placement="right" data-toggle="tooltip" title="-{{cert.school}}">
+	        <a href="#" class="awardPops" data-trigger="hover click" data-placement="right" data-toggle="tooltip" title="-{{cert.school}}">
 	        	{{cert.title}} - {{cert.period}}
 	        </a>
 	  	</div>
