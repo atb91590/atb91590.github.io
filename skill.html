@@ -7,7 +7,7 @@
 	</div>
 	<div id="sorter" class="clearfix">
 		<div class="dropdownArea btn-group">
-			<a class="btn btn-mini dropdown-toggle dropdownArea" ng-click="main.toggleDropMenu('sortMenu');" data-toggle="dropdown">
+			<a class="btn btn-mini dropdown-toggle dropdownArea" ng-mouseup="main.toggleDropMenu('sortMenu');" data-toggle="dropdown">
 				Order by: {{skill.getSortBy().text}}
 				<span class="caret"></span>
 			</a>
