@@ -14,21 +14,25 @@
 	  		<div id="phoneShadow"></div>
 	  		<img id="phoneShell" ng-src="{{project.phoneShell}}"/>
 	  	</div>
-	  	<div id="projCarousel" data-interval="4000" ng-class="{'mobile': project.isMobile(proj), 'web': project.isWeb(proj)}" class="carousel slide">
+	  	<div class="projSlick" ng-class="{'mobile': project.isMobile(proj), 'web': project.isWeb(proj)}">
+	  		<div class="item" ng-repeat="image in proj.images">
+	  			<img class="projImg" ng-src="{{image}}"/>
+	  		</div>
+	  	</div>
+
+	  	<!-- <div id="projCarousel" data-interval="4000" ng-class="{'mobile': project.isMobile(proj), 'web': project.isWeb(proj)}" class="carousel slide">
 			<ol class="carousel-indicators">
 				<li data-target="#projCarousel" ng-repeat="image in proj.images" data-slide-to="{{$index}}" ng-class="{'active':$index==0}"></li>
 			</ol>
-			<!-- Carousel items -->
 			<div class="carousel-inner">
 				<div class="item" ng-repeat="image in proj.images" ng-class="{'active':$index==0}">
 					<img class="spinner" ng-src="{{main.spinner}}"/>
 					<img class="projImg" ng-src="{{image}}" load-spinner/>
 				</div>
 			</div>
-			<!-- Carousel nav -->
 			<a class="carousel-control left" href="#projCarousel" data-slide="prev"><p class="icon-prev"></p></a>
 			<a class="carousel-control right" href="#projCarousel" data-slide="next"><p class="icon-next"></p></a>
-		</div>
+		</div> -->
 		<div id="projCredit" ng-if="proj.credit">
 			<a href="{{proj.credit.link}}">{{proj.credit.text}}</a>
 		</div>

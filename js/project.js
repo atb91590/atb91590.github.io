@@ -132,5 +132,11 @@
 		this.isWeb = function(project){
 			return project.type=='web';
 		}
+
+		$(document).ready(function(){
+		  $('.projSlick').slick({
+		    setting-name: setting-value
+		  });
+		});
 	}
 })();
