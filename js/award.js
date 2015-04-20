@@ -45,9 +45,9 @@
 
 	var awardController = function(){
 	    //Activate Tooltip Popups
-	    (function(){
+	    $(function(){
 	    	$('.awardPops').tooltip();
-	    })();
+	    });
 		this.awards = myAwards;
 	}
 })();
