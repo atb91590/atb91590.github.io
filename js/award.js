@@ -44,10 +44,6 @@
 	});
 
 	var awardController = function(){
-	    //Activate Tooltip Popups
-	    $(function(){
-	    	$('.awardPops').tooltip();
-	    });
 		this.awards = myAwards;
 	}
 })();

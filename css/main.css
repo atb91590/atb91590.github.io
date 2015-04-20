@@ -581,20 +581,10 @@
 }
 
 #awardList {
-	min-width: 300px;
-	max-width: 600px;
-	width: 90%;
-	margin: 0 auto;
 	text-align: center;
 	margin-bottom: 100px;
 }
 
 #awardList div {
 	padding: 5px;
-}
-
-.awardPops, .awardPops:hover {
-	text-decoration: none;
-	color: white;
-	cursor: default;
 }
