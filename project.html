@@ -47,7 +47,17 @@
 				<button class="btn" ng-class="{'active': project.isDescTab('overview')}" ng-click="project.setDescTab('overview');">Overview</button>
 				<button class="btn" ng-class="{'active': project.isDescTab('stack')}" ng-click="project.setDescTab('stack');">Stack</button>
 			</div><br><br>
-			<p ng-if="project.isDescTab('overview');">{{proj.description}}</p>
+			<p ng-if="project.isDescTab('overview');">
+				{{proj.description}}
+				<div id="projDocContainer">
+					Download:<br>
+					<div ng-repeat="doc in proj.documents">
+						<form method="get" action="{{doc.path}}">
+							<button type="submit">{{doc.title}}</button>
+						</form>
+					</div>
+				</div>
+			</p>
 			<div id="stackContainer" class="clearfix" ng-if="project.isDescTab('stack');">
 				<div class="stackPart">
 					<span>Frontend</span>
