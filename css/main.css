@@ -236,7 +236,8 @@
 	width: 285px;
 	margin: 0 auto;
 	border: 1px solid lightgrey;
-	border-radius: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
 }
 
 .rateKey {
@@ -247,14 +248,20 @@
 }
 
 #sorter {
-	border-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
 	border: 1px solid lightgrey;
 	margin: 0 auto;
 	text-align: center;
+	border-top: none;
 }
 
 #sorter, #sorter div, #sorter div a {
 	width: 285px;
+}
+
+#sorter div a {
+	padding: 0;
 }
 
 #sorter div ul li {
