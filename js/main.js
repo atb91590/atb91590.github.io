@@ -20,7 +20,8 @@
 
 		var gpaEgg = new Konami();
 		gpaEgg.code = function(){
-			$scope.konami=true;
+			$('.konamiOff').hide();
+			$('.konamiOn').show();
 		}
 		gpaEgg.load();
 
