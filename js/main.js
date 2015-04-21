@@ -17,6 +17,13 @@
 		this.getMetaAuthor = function(){
 			return this.metaTags.author;
 		}
+
+		var gpaEgg = new Konami();
+		gpaEgg.code = function(){
+			this.konami=true;
+		}
+		gpaEgg.load();
+
 		// Start: Activate Draggable Profile Pic------------------------------------------------
 		interact('#profPic').draggable({
 		    inertia: true,
