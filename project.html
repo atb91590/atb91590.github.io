@@ -60,7 +60,7 @@
 					<p ng-repeat="part in proj.stack.backend | orderBy:'part'">{{part}}</p>
 				</div>
 			</div>
-			<div id="projDocContainer">
+			<div id="projDocContainer" ng-if="proj.documents">
 				<span id="dlTitle">Download</span>
 				<div ng-repeat="doc in proj.documents">
 					<form method="get" action="{{doc.path}}">
