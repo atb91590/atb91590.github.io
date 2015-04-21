@@ -21,17 +21,17 @@
 		<a href="mailto:{{profile.getEmail()}}">
 			{{profile.getEmail()}}
 		</a><br>
-	<span ng-if="!main.konami" class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
-	<span ng-if="main.konami" class="glyphicon glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+	<span ng-if="!$scope.konami" class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+	<span ng-if="$scope.konami" class="glyphicon glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
 		Overall GPA:
-		<span ng-if="!main.konami">Konami to Unlock</span>
-		<span ng-if="main.konami">{{profile.getOverallGPA()}}</span>
+		<span ng-if="!$scope.konami">Konami to Unlock</span>
+		<span ng-if="$scope.konami">{{profile.getOverallGPA()}}</span>
 		<br>
-	<span ng-if="!main.konami"class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
-	<span ng-if="main.konami" class="glyphicon glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+	<span ng-if="!$scope.konami"class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>
+	<span ng-if="$scope.konami" class="glyphicon glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
 		CSULB GPA:
-		<span ng-if="!main.konami">Konami to Unlock</span>
-		<span ng-if="main.konami">{{profile.getCSULBGPA()}}</span><br>
+		<span ng-if="!$scope.konami">Konami to Unlock</span>
+		<span ng-if="$scope.konami">{{profile.getCSULBGPA()}}</span><br>
 	<div id="websites">
 		<div class="siteContainer" ng-repeat="website in profile.getWebsites()">
 			<a href="{{website.link}}" title="{{website.type}}">

@@ -19,8 +19,8 @@
 		}
 
 		var gpaEgg = new Konami();
-		gpaEgg.code = function(this){
-			this.konami=true;
+		gpaEgg.code = function(){
+			$scope.konami=true;
 		}
 		gpaEgg.load();
 
