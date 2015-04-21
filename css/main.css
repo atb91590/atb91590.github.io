@@ -116,6 +116,7 @@
 	background-color: black;
 	color: white;
 	text-align: center;
+	z-index: 20;
 }
 
 /*Alert Bar -----------------------------------------------------------------------------------------------------*/
