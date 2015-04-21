@@ -500,7 +500,7 @@
 	font-weight: bold;
 }
 
-#projDocContainer {
+#projArticle, #projDocContainer {
 	padding-top: 25px;
 	text-align: center;
 }

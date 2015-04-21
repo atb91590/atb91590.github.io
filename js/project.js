@@ -48,8 +48,9 @@
 				backend: ['Java', 'Microsoft SQL Server', 'Ruby (extract geospatial data)', 'Cold Fusion (WSDL)'],
 				frontend: ['Java', 'Google Maps API', 'Mapquest']
 			},
-			description:'With concern for public knowledge, Mayor Eric Garcetti wanted city spending to be transparent and '+
-						'requested road conditions for LA County to be mapped. This was paired with his initiative to repair streets.',
+			description:"Mayor Eric Garcetti instructed LA city employees gather their respective departments' data to be publicized. "+
+						'My section was requested to plot road conditions for LA County in the existing LABSS android application. ',
+			article: 'http://www.lamayor.org/garcetti_directs_city_departments_to_collect_data_for_open_data_initiative',
 			images:[
 				'img/projects/labss/start.jpg',
 				'img/projects/labss/middle.jpg',
