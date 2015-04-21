@@ -19,9 +19,8 @@
 		}
 
 		var gpaEgg = new Konami();
-		gpaEgg.code = function(){
+		gpaEgg.code = function(this){
 			this.konami=true;
-			alert('hi');
 		}
 		gpaEgg.load();
 
