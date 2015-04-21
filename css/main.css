@@ -105,11 +105,12 @@
 
 #konamiBox {
 	display: none;
-	width: 75%;
+	width: 400px;
 	position: fixed;
 	top: 40%;
-	left: 50%;
-	margin: 0 0 0 -37.5%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 	font-size: 40px;
 	font-family: OpenSansBold;
 	padding: 25px;

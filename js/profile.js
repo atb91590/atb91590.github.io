@@ -54,7 +54,7 @@
 			var mm = today.getMonth()+1;
 			var yyyy = today.getFullYear();
 			var age = yyyy-this.myself.birthday.year;
-			if (mm<this.myself.birthday.month && dd<this.myself.birthday.day)
+			if (mm<this.myself.birthday.month || (mm==this.myself.birthday.month && dd<this.myself.birthday.day))
 				age--;
 			return age;
 		}
