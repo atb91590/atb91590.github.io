@@ -22,6 +22,8 @@
 		gpaEgg.code = function(){
 			$('.konamiOff').hide();
 			$('.konamiOn').show();
+			$('#konamiBox').show();
+			$('#konamiBox').fadeOut(2000);
 		}
 		gpaEgg.load();
 
