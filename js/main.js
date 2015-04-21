@@ -25,7 +25,7 @@
 			$('#konamiBox').show();
 			setTimeout(function(){
 				$('#konamiBox').fadeOut(2000);
-			},2000);
+			},500);
 		}
 		gpaEgg.load();
 
