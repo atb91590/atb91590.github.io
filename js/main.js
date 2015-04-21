@@ -21,6 +21,7 @@
 		var gpaEgg = new Konami();
 		gpaEgg.code = function(){
 			this.konami=true;
+			alert('hi');
 		}
 		gpaEgg.load();
 
