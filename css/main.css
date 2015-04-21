@@ -96,11 +96,11 @@
 }
 
 .konamiOff {
-	visibility: visible;
+	display: inline;
 }
 
 .konamiOn {
-	visibility: hidden;
+	display: none;
 }
 
 
