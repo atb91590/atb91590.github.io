@@ -282,16 +282,19 @@
 	width: 300px;
 }
 
-#general, #libraries, #databases, #frameworks, #tools {
+.skillList {
 	min-width: 300px;
 	width: 78%;
 	margin: 25px auto;
 	padding: 0 15px;
 }
 
-#general div, #libraries div, #databases div, #frameworks div, #tools div {
+.skillList div {
 	float: left;
 	font-size: 10px;
+}
+
+.skillList div span {
 	padding: 3px;
 	margin: 3px;
 }
