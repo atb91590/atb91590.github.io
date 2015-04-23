@@ -2,13 +2,13 @@
 	<div class="sectionTitle">Work History</div>
 	<div id="jobContainer">
 		<div class="row">
-		  <div class="col-sm-6 col-md-4" ng-repeat="job in work.getJobs();">
+		  <div class="job col-sm-6 col-md-4" ng-repeat="job in work.getJobs();">
 		    <div class="thumbnail">
 			  <img class="spinner" ng-src="{{main.spinner}}"/>
 		      <img ng-src="{{job.logo}}" load-spinner>
 		      <div class="caption">
-		        <h3>{{job.title}}</h3>
-		        <p>
+		        <h3 class="jobTitle">{{job.title}}</h3>
+		        <p class="jobDescription">
 		      	  {{job.employer}}<br>
 				  {{job.city}}, {{job.state}}<br>
 				  {{job.startDate}} - {{job.endDate}}<br><br>

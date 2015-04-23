@@ -341,44 +341,12 @@
 }
 
 .job {
-	float: left;
-	width: 250px;
-	margin-right: 25px;
-	min-height: 425px;
-	border: 3px outset lightgrey;
 	border-radius: 5px;
+	border: 3px outset lightgrey;
 }
 
-.job div {
-	margin: 0 auto;
-}
-
-.jobLogoContainer {
-	width: 200px;
-	height: 175px;
-}
-
-.jobLogo {
-	width: 100%;
-	height: auto;
-}
-
-.jobDescription {
+.jobTitle, .jobDescription {
 	text-align: center;
-	width: 175px;
-}
-
-.jobDuties {
-	margin-top: -25px;
-	text-align: center;
-	min-width: 250px;
-	max-width: 500px;
-	width: 80%;
-}
-
-.jobTitle {
-	text-align: center;
-	font-weight: bold;
 }
 
 /*Project Area -------------------------------------------------------------------------------------------------------*/
