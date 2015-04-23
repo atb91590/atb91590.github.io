@@ -1,23 +1,23 @@
 <div id="myWork" ng-app="workDirective" class="section clearfix">
 	<div class="sectionTitle">Work History</div>
 	<div id="jobContainer">
-		<div class="job panel panel-default" ng-repeat="job in work.getJobs();">
-			<div class="panel-heading">
-			    <h3 class="panel-title jobTitle">{{job.title}}</h3>
-			  </div>
-			<div class="jobLogoContainer clearfix">
-				<img class="spinner" ng-src="{{main.spinner}}"/>
-				<img class="jobLogo" ng-src="{{job.logo}}" load-spinner/>
-			</div>
-			<div class="jobDuties">
-				{{job.employer}}<br>
+		<ul class="thumbnails">
+		  <li class="span4" ng-repeat="job in work.getJobs();">
+		    <div class="thumbnail">
+			  <img class="spinner" ng-src="{{main.spinner}}"/>
+		      <img ng-src="{{job.logo}}" load-spinner>
+		      <h3>{{job.title}}</h3>
+		      <p>
+		      	{{job.employer}}<br>
 				{{job.city}}, {{job.state}}<br>
 				{{job.startDate}} - {{job.endDate}}<br><br>
 				<b>Responsibilities:</b><br>
 				<span ng-repeat="duty in job.duties">
 					{{duty}}<br>
 				</span>
-			</div>
-		</div>
+		      </p>
+		    </div>
+		  </li>
+		</ul>
 	</div>
 </div>
