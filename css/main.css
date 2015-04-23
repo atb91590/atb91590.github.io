@@ -352,7 +352,7 @@
 	margin: 0px;
 }
 
-.jobTitle {
+.job .thumbnail .caption h3 {
 	font-size: 18px;
 	font-weight: bold;
 }
