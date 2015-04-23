@@ -110,9 +110,8 @@
 			{type:'Javascript', 	rate:7},
 			{type:'Cold Fusion', 	rate:8},
 			{type:'SQL', 			rate:8},
-			{type:'Objective-C', 	rate:'Exposed'},
-			{type:'Python', 		rate:'Beginner'},
-			{type:'Ruby', 			rate:'Exposed'},
+			{type:'Python', 		rate:5},
+			{type:'Ruby', 			rate:5},
 			{type:'MatLab', 		rate:5},
 			{type:'PHP',			rate:4}
 		]
@@ -132,7 +131,7 @@
 	var skillController = function(){
 		this.skills = mySkills;
 		this.isNumeric = numCheck;
-		this.sortBy = {text:'Type', val:'type'};
+		this.sortBy = {text:'Alphabetical', val:'type'};
 		this.getSortBy = function(){
 			return this.sortBy;
 		}
@@ -156,16 +155,6 @@
 		}
 		this.getTools = function(){
 			return this.skills.tools;
-		}
-		this.getLanguageRate = function(rate){
-			if (!numCheck(rate))
-				return 'label-primary';
-			if (rate<=5)
-				return 'label-danger';
-			else if (rate<=7)
-				return 'label-warning';
-			else
-				return 'label-success';
 		}
 		this.getSkillRate = function(rate){
 			if (rate<=5)

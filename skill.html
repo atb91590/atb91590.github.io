@@ -12,7 +12,7 @@
 				<span class="caret"></span>
 			</a>
 			<ul id="sortMenu" class="dropdown-menu">
-				<li class="dropItem" ng-click="skill.setSortBy({text:'Type',val:'type'}); main.toggleDropMenu('sortMenu');">
+				<li class="dropItem" ng-click="skill.setSortBy({text:'Alphabetical',val:'type'}); main.toggleDropMenu('sortMenu');">
 					<a>Type</a>
 				</li>
 				<li class="dropItem" ng-click="skill.setSortBy({text:'Rate',val:'-rate'}); main.toggleDropMenu('sortMenu');">
@@ -52,10 +52,9 @@
 		</div>
 	</div>
 	<div class="subTitle">Languages</div>
-	<div id="languages">
-		<span class="label lang {{skill.getLanguageRate(lang.rate)}}" ng-repeat="lang in skill.getLanguages() | orderBy:skill.getSortBy().val">
-			<div class="langName">{{lang.type}}</div>
-			<div class="langRate">{{lang.rate}}<span ng-if="skill.isNumeric(lang.rate);">/10</span></div>
-		</span>
+	<div class="skillList clearfix">
+		<div ng-repeat="lang in skill.getLanguages() | orderBy:skill.getSortBy().val">
+			<span class="badge {{skill.getSkillRate(lang.rate)}}">{{lang.type}}</span>
+		</div>
 	</div>
 </div>
