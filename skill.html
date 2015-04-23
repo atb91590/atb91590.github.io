@@ -24,37 +24,37 @@
 	<div class="subTitle">General</div>
 	<div class="skillList clearfix">
 		<div ng-repeat="gen in skill.getGeneral() | orderBy:skill.getSortBy().val">
-			<span class="badge {{skill.getSkillRate(gen.rate)}}">{{gen.type}}</span>
+			<span class="label {{skill.getSkillRate(gen.rate)}}">{{gen.type}}</span>
 		</div>
 	</div>
 	<div class="subTitle">Libraries</div>
 	<div class="skillList clearfix">
 		<div ng-repeat="library in skill.getLibraries() | orderBy:skill.getSortBy().val">
-			<span class="badge {{skill.getSkillRate(library.rate)}}">{{library.type}}</span>
+			<span class="label {{skill.getSkillRate(library.rate)}}">{{library.type}}</span>
 		</div>
 	</div>
 	<div class="subTitle">Databases</div>
 	<div  class="skillList clearfix">
 		<div ng-repeat="database in skill.getDatabases() | orderBy:skill.getSortBy().val">
-			<span class="badge {{skill.getSkillRate(database.rate)}}">{{database.type}}</span>
+			<span class="label {{skill.getSkillRate(database.rate)}}">{{database.type}}</span>
 		</div>
 	</div>
 	<div class="subTitle">Frameworks</div>
 	<div class="skillList clearfix">
 		<div ng-repeat="framework in skill.getFrameworks() | orderBy:skill.getSortBy().val">
-			<span class="badge {{skill.getSkillRate(framework.rate)}}">{{framework.type}}</span>
+			<span class="label {{skill.getSkillRate(framework.rate)}}">{{framework.type}}</span>
 		</div>
 	</div>
 	<div class="subTitle">Tools</div>
 	<div class="skillList clearfix">
 		<div ng-repeat="tool in skill.getTools() | orderBy:skill.getSortBy().val">
-			<span class="badge {{skill.getSkillRate(tool.rate)}}">{{tool.type}}</span>
+			<span class="label {{skill.getSkillRate(tool.rate)}}">{{tool.type}}</span>
 		</div>
 	</div>
 	<div class="subTitle">Languages</div>
 	<div class="skillList clearfix">
 		<div ng-repeat="lang in skill.getLanguages() | orderBy:skill.getSortBy().val">
-			<span class="badge {{skill.getSkillRate(lang.rate)}}">{{lang.type}}</span>
+			<span class="label {{skill.getSkillRate(lang.rate)}}">{{lang.type}}</span>
 		</div>
 	</div>
 </div>
