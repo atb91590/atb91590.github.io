@@ -345,6 +345,7 @@
 	border: 3px outset lightgrey;
 	margin: 10px;
 	padding: 0px;
+	width: 300px;
 }
 
 .job .thumbnail {
