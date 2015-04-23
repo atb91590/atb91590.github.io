@@ -292,6 +292,8 @@
 #general div, #libraries div, #databases div, #frameworks div, #tools div {
 	float: left;
 	font-size: 10px;
+	padding: 3px;
+	margin: 3px;
 }
 
 #languages {
