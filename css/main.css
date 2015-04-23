@@ -343,6 +343,11 @@
 .job {
 	border-radius: 5px;
 	border: 3px outset lightgrey;
+	margin: 10px;
+}
+
+.job .thumbnail {
+	margin: 0px;
 }
 
 .jobTitle, .jobDescription {
