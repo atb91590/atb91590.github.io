@@ -345,11 +345,16 @@
 	border: 3px outset lightgrey;
 	margin: 10px;
 	padding: 0px;
-	width: 275px;
+	max-width: 275px;
 }
 
 .job .thumbnail {
 	margin: 0px;
+}
+
+.jobTitle {
+	font-size: 18px;
+	font-weight: bold;
 }
 
 .jobTitle, .jobDescription {
