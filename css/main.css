@@ -344,6 +344,7 @@
 	border-radius: 5px;
 	border: 3px outset lightgrey;
 	margin: 10px;
+	padding: 0px;
 }
 
 .job .thumbnail {
