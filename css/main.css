@@ -68,15 +68,15 @@
 }
 
 .badge.low {
-  background-color: #66FFFF;
+  background-color: #4499ff;
 }
 
 .badge.med {
-  background-color: #0099FF;	
+  background-color: #2255bb;	
 }
 
 .badge.high {
-  background-color: #000099;	
+  background-color: #225566;	
 }
 
 .isLoading {
