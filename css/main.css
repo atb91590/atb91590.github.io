@@ -63,19 +63,19 @@
   border-color: #46b8da;
 }
 
-.badge.low, .badge.med, .badge.high, .label.low, .label.med, .label.high {
+.badge.low, .badge.med, .badge.high {
   padding: 1px 5px;
 }
 
-.badge.low, .label.low {
+.badge.low {
   background-color: #4499ff;
 }
 
-.badge.med, .label.med {
+.badge.med {
   background-color: #2255bb;	
 }
 
-.badge.high, .label.high {
+.badge.high {
   background-color: #225566;	
 }
 
