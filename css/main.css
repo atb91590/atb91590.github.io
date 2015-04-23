@@ -295,8 +295,9 @@
 }
 
 .skillList div span {
-	padding: 3px;
+	padding: 5px;
 	margin: 3px;
+	border-radius: 5px; 
 }
 
 #languages {
