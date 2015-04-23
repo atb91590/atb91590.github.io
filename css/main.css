@@ -47,7 +47,7 @@
 
 .subTitle {
 	font-family: OpenSansBold;
-	font-size: 24px;
+	font-size: 20px;
 	margin: 0 auto;
 	font-weight: bold;
 	text-align: center;
@@ -282,16 +282,16 @@
 	width: 300px;
 }
 
-#statements, #libraries, #databases, #frameworks, #tools {
+#general, #libraries, #databases, #frameworks, #tools {
 	min-width: 300px;
 	width: 78%;
 	margin: 25px auto;
 	padding: 0 15px;
 }
 
-#statements div, #libraries div, #databases div, #frameworks div, #tools div {
-	width: 150px;
+#general div, #libraries div, #databases div, #frameworks div, #tools div {
 	float: left;
+	font-size: 10px;
 }
 
 #languages {
