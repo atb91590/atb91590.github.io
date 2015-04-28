@@ -1,119 +1,52 @@
 (function(){
 	var mySkills = {
 		general:[
-			{
-				type: 'AGILE',
-				rate: 6
-			},
-			{
-				type: 'Team Cooperation',
-				rate: 8
-			},
-			{
-				type: 'Bayesian Probability',
-				rate: 5
-			},
-			{
-				type: 'NP-Complete',
-				rate: 7
-			}
+			{type: 'AGILE',					rate: 6},
+			{type: 'Team Cooperation',		rate: 8},
+			{type: 'Bayesian Probability',	rate: 5},
+			{type: 'NP-Complete',			rate: 7}
 		],
 		libraries:[
-			{
-				type: 'jQuery/jQueryUI',
-				rate: 8
-			},
-			{
-				type: 'Google Maps',
-				rate: 6
-			},
-			{
-				type: 'InteractJS',
-				rate: 4
-			}
+			{type: 'jQuery/jQueryUI',		rate: 8},
+			{type: 'Google Maps',			rate: 6},
+			{type: 'InteractJS',			rate: 4}
 		],
 		frameworks:[
-			{
-				type: 'AngularJS',
-				rate: 7
-			},
-			{
-				type: 'IonicFramework',
-				rate: 6
-			},
-			{
-				type: 'BootStrap',
-				rate: 7
-			},
-			{
-				type: 'Android',
-				rate: 7
-			}
+			{type: 'AngularJS',				rate: 7},
+			{type: 'IonicFramework',		rate: 6},
+			{type: 'BootStrap',				rate: 7},
+			{type: 'Android',				rate: 7},
+			{type: 'TypeScript',			rate: 4}
 		],
 		databases:[
-			{
-				type: 'NodeJS',
-				rate: 4
-			},
-			{
-				type: 'mySQL',
-				rate: 4
-			},
-			{
-				type: 'MS SQL Server',
-				rate: 6
-			}
+			{type: 'NodeJS',				rate: 4},
+			{type: 'mySQL',					rate: 4},
+			{type: 'MS SQL Server',			rate: 6}
 		],
 		tools:[
-			{
-				type: 'Photoshop',
-				rate: 8
-			},
-			{
-				type: 'GIT',
-				rate: 8
-			},
-			{
-				type: 'Illustrator',
-				rate: 4
-			},
-			{
-				type: 'Sublime Text',
-				rate: 8
-			},
-			{
-				type: 'Eclipse',
-				rate: 8
-			},
-			{
-				type: 'MS Excel',
-				rate: 8
-			},
-			{
-				type: 'MS Word',
-				rate: 9
-			},
-			{
-				type: 'MS Powerpoint',
-				rate: 8
-			},
-			{
-				type: 'Chrome Dev Tools',
-				rate: 8
-			}
+			{type: 'Photoshop',				rate: 8},
+			{type: 'GIT',					rate: 8},
+			{type: 'Illustrator',			rate: 4},
+			{type: 'Sublime Text',			rate: 8},
+			{type: 'Eclipse',				rate: 8},
+			{type: 'MS Excel',				rate: 8},
+			{type: 'MS Word',				rate: 9},
+			{type: 'MS Powerpoint',			rate: 8},
+			{type: 'Chrome Dev Tools',		rate: 8}
 		],
 		languages:[
-			{type:'Java', 			rate:8},
-			{type:'C/C++', 			rate:5},
-			{type:'HTML', 			rate:8},
-			{type:'CSS', 			rate:8},
-			{type:'Javascript', 	rate:7},
-			{type:'Cold Fusion', 	rate:8},
-			{type:'SQL', 			rate:8},
-			{type:'Python', 		rate:5},
-			{type:'Ruby', 			rate:5},
-			{type:'MatLab', 		rate:5},
-			{type:'PHP',			rate:4}
+			{type:'Java', 					rate:8},
+			{type:'C/C++', 					rate:5},
+			{type:'HTML', 					rate:8},
+			{type:'CSS', 					rate:8},
+			{type:'Javascript', 			rate:7},
+			{type:'Cold Fusion', 			rate:8},
+			{type:'SQL', 					rate:8},
+			{type:'Python', 				rate:5},
+			{type:'Ruby', 					rate:5},
+			{type:'MatLab', 				rate:5},
+			{type:'PHP',					rate:4},
+			{type:'C#',						rate:5}
 		]
 	};
 
