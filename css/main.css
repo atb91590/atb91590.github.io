@@ -450,11 +450,9 @@
 }
 .slick-prev, .slick-next{
 	top: 105%;
-	color: black;
 }
 .slick-prev:before, .slick-next:before {
-	color: transparent;
-	border: 3px outset grey;
+	color: grey;
 }
 
 #projCredit {
