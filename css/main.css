@@ -441,21 +441,12 @@
 	margin: 0 auto;
 }
 
-#projCarousel .carousel-control {
-	font-size: 36px;
-	color: white;
-}
+.slick-prev{
+	left:0;
+} 
 
-#projCarousel.mobile .carousel-indicators {
-	top: 353px;
-}
-
-#projCarousel .carousel-indicators li {
-  	border: 1px solid #000;
-}
-
-#projCarousel .carousel-indicators .active {
-  background-color: #000;
+.slick-next {
+	right:0;
 }
 
 #projCredit {
