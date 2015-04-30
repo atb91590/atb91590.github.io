@@ -418,7 +418,7 @@
 #projCarousel {
 	margin: 0 auto;
 	margin-top: 60px;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
 #projCarousel.mobile, #projCarousel.mobile .item, #projCarousel.mobile .item .projImg{
@@ -449,7 +449,7 @@
 	right:0;
 }
 .slick-prev, .slick-next{
-	top: 105%;
+	top: 103%;
 }
 .slick-prev:before, .slick-next:before {
 	color: grey;
