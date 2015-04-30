@@ -448,6 +448,12 @@
 .slick-next {
 	right:0;
 }
+.slick-prev, .slick-next{
+	top: 100%;
+}
+.slick-prev:before, .slick-next:before {
+	color: lightgrey;
+}
 
 #projCredit {
 	text-align: center;
