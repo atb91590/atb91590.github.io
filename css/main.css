@@ -449,10 +449,10 @@
 	right:0;
 }
 .slick-prev, .slick-next{
-	top: 100%;
+	top: 105%;
 }
 .slick-prev:before, .slick-next:before {
-	color: lightgrey;
+	color: grey;
 }
 
 #projCredit {
