@@ -1,7 +1,10 @@
 <div id="myProjects" ng-app="projectDirective" class="section clearfix">
 	<div class="sectionTitle">Projects</div>
 	<div class="dropdownArea dropdown">
-		<a id="curProj" ng-click="main.toggleDropMenu('projMenu');" class="dropdownArea dropdown-toggle btn btn-scheme" data-toggle="dropdown">{{project.currentProject.title}}</a>
+		<a id="curProj" ng-click="main.toggleDropMenu('projMenu');" class="dropdownArea dropdown-toggle btn btn-scheme" data-toggle="dropdown">
+			{{project.currentProject.title}}
+			<span class="glyphicon glyphicon-triangle-bottom pull-right" aria-hidden="true"></span>
+		</a>
 		<ul id="projMenu" class="dropdown-menu">
 		  <li class="dropItem" ng-click="project.setCurrentProject(proj); main.toggleDropMenu('projMenu');" ng-repeat="proj in project.projects"><a>{{proj.title}}</a></li>
 		</ul>
