@@ -406,6 +406,10 @@
 	border: 10px outset #5A83A0;
 }
 
+#curProj span {
+	margin-top: 5px;
+}
+
 .projectDisplay {
 	text-align: center;
 	margin-top: 25px;
