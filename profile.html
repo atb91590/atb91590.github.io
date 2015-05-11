@@ -33,7 +33,7 @@
 		<span class="konamiOff">Konami code to unlock</span>
 		<span class="konamiOn">{{profile.getCSULBGPA()}}</span><br>
 	<div id="websites">
-		<div class="siteContainer" ng-repeat="website in profile.getWebsites()">
+		<div class="siteContainer" ng-repeat="website in profile.getWebsites() | orderBy:website.type">
 			<a href="{{website.link}}" title="{{website.type}}">
 				<img class="website" ng-src="{{website.icon}}"/>
 			</a>
