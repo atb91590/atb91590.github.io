@@ -21,6 +21,11 @@
 				type: 'Angel List',
 				icon: 'img/profile/websites/angellist_icon.gif',
 				link: 'https://angel.co/alex-bu'
+			},
+			{
+				type: 'Github',
+				icon: 'img/profile/websites/git_icon.gif',
+				link: 'https://github.com/atb91590'
 			}
 		],
 		contact:{
