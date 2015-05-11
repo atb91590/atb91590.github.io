@@ -242,14 +242,17 @@
 	padding-top: 10px;
 	width: 120px;
 	margin: 0 auto;
-	text-align: center;
 }
 
-.siteContainer, .siteContainer a img {
+.siteContainer {
+	float: left;
 	padding: 0 5px;
+} 
+
+.siteContainer a, .siteContainer a img {
 	width: 30px;
 	height: auto;
-	float: left;
+	margin: 0 auto;
 }
 
 /*Skill Area -------------------------------------------------------------------------------------------------------*/
