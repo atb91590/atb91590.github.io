@@ -240,7 +240,7 @@
 
 #websites {
 	padding-top: 10px;
-	width: 120px;
+	width: 90px;
 	margin: 0 auto;
 }
 
@@ -250,7 +250,7 @@
 } 
 
 .siteContainer a, .siteContainer a img {
-	width: 30px;
+	width: 20px;
 	height: auto;
 	margin: 0 auto;
 }
