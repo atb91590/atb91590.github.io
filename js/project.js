@@ -55,7 +55,11 @@
 				'img/projects/labss/start.jpg',
 				'img/projects/labss/middle.jpg',
 				'img/projects/labss/end.jpg'
-			]
+			],
+			credit: {
+				text: 'View in Google Play Store',
+				link: 'https://play.google.com/store/apps/details?id=org.lacity.bss.streets&hl=en'
+			}
 		},
 		{
 			title:'Planet Recycle',
