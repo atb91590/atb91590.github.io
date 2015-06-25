@@ -9,7 +9,7 @@
 				backend: ['PHP (Laravel)', 'mySQL', 'Javascript', 'AngularJS', 'jQuery'],
 				frontend: ['HTML', 'CSS', 'IonicFramework']
 			},
-			description:'Information today is so easily accessible via the internet, but the people in your life are not. '+
+			description:'Information today is so easily accessible via the internet, but the people in our lives are not. '+
 						'Corral solves this problem by giving you access to your friends at the tip of your fingers by '+
 						'only informing you who is available at a user specified time (while maintaining user privacy)',
 			documents:[
