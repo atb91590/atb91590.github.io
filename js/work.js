@@ -12,6 +12,7 @@
 				'Develop frontend and backend components with AGILE methodology while '+
 				'coordinating with CTO, designers, product management, and other engineers.'
 			]
+		},
 		{
 			title:'Fiscal Systems Intern',
 			logo:'img/jobs/bss_logo_transparent.png',
