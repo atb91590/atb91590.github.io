@@ -1,13 +1,25 @@
 (function(){
 	var myJobs = [
 		{
+			title:'Software Engineer',
+			logo:'img/jobs/veritone-media-logo.gif',
+			employer:'Veritone Media',
+			city:'Newport Beach',
+			state:'California',
+			startDate:'July 2015',
+			endDate:'Present',
+			duties:[
+				'Develop frontend and backend components with AGILE methodology while '+
+				'coordinating with CTO, designers, product management, and other engineers.'
+			]
+		{
 			title:'Fiscal Systems Intern',
 			logo:'img/jobs/bss_logo_transparent.png',
 			employer:'City of Los Angeles',
 			city:'Los Angeles',
 			state:'California',
 			startDate:'June 2013',
-			endDate:'Present',
+			endDate:'June 2015',
 			duties:[
 				'Sole Full Stack Developer of intranet applications',
 				'Collaborate with interns to enhance LABSS Android App'

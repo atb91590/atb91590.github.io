@@ -1,4 +1,4 @@
-(function(){
+	(function(){
 	var self = {
 		name:{
 			firstName:'Alex',
@@ -36,7 +36,7 @@
 			degree:'Bachelors of Science in Computer Science',
 			csulbGPA:3.667,
 			overallGPA:3.075,
-			objective:'Gain a strong foundation in Software Development by obtaining an entry level position and continue learning through career experiences to become a Full-Stack Engineer.'
+			objective:'Gain a strong foundation in Software Development, never stop learning, and build my own software company.'
 		}
 	};
 
